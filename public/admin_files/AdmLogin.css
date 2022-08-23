@@ -1,0 +1,26 @@
+@charset "utf-8";
+@import './Icons.css';
+@import './Fonts/nanumgothic.css';
+@import './User-Grid.css';
+/* login */
+body {background: linear-gradient(to right,#2ebf91,#8360c3);background-size:cover;font-family:Arial, Helvetica,'나눔고딕',"Nanum Gothic",'돋움',Dotum,AppleGothic,sans-serif; font-size:12px;}
+#login-box{ width:400px; background:rgba(255,255,255,1);border-radius: 12px;box-shadow: 0 3px 6px hsla(0, 0%, 0%, 0.1); position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);padding:30px;}
+#login-box .img{text-align:center; font-size:45px;}
+#login-box h2{ text-align:center; padding:10px 30px 10px; font-size:25px;font-family: verdana !important;}
+#login-box p.txt{text-align:center; color:#9c9c9c;font-size:16px;}
+#login-box dl{padding:20px 30px 0px;}
+#login-box dt{font-size:16px;font-family: verdana !important;}
+#login-box dd{padding-bottom:20px;position:Relative}
+#login-box dd i{position:absolute; font-size:23px; top:9px; left:20px;color:#65768f}
+.form-login{height:42px; line-height:42px; background:#e2eaf6; border-radius:50px; width:100%; box-sizing:border-box; padding-left:50px;font-size:16px;border:1px solid #f5f7fa; -webkit-appearance:none; }
+.form-login:focus{outline:0; }
+.options{ text-align:left; padding:0px 30px 15px; }
+.options a{ text-decoration:underline; cursor:pointer; font-size: 14px;}
+#login-box  p.btn{padding:0px 30px 15px; }
+#login-box  p.btn a{display:block;height:42px; line-height:42px; background:#2ebf91; border-radius:50px; width:100%; color:#fff;font-family: verdana !important;text-align:center;
+font-size:18px;font-weight:bold}
+#login-box  p.btn a:hover{background:#8360c3; }
+@media (max-width: 480px) {
+#login-box{width:300px;padding:20px 0px; }
+#login-box dd{padding-bottom:10px;}
+}
