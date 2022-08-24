@@ -12,7 +12,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!--====== Default css ======-->
-    <link rel="stylesheet" href="{{ asset('/static/css/default.css')}}">
+    <link rel="stylesheet" href="{{ asset('/static/css/default.css') }}">
     <!--====== Style css ======-->
     <link rel="stylesheet" href="{{ asset('/static/css/style.css') }}">
     <!--====== Responsive css ======-->
