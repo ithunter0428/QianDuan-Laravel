@@ -21,6 +21,6 @@ class HomeController extends Controller
         }
 
         $data = [];
-        return view('auth', compact('data'));
+        return view('signin', compact('data'));
     }
 }

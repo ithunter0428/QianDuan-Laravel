@@ -99,7 +99,7 @@
                             @if (Auth::user())
                                 <span class="phone"><i class="far fa-sign-in"></i><a href="{{ route('logout') }}">Logout</a></span>
                             @else
-                            <span class="phone"><i class="far fa-sign-in"></i><a href="{{ route('view_auth') }}">登录会员</a></span>
+                            <span class="phone"><i class="far fa-sign-in"></i><a href="{{ route('view_signin') }}">登录会员</a></span>
                             <span class="phone"><i class="far fa-sign-in"></i><a href="#">注册会员</a></span>
                             <span class="phone"><i class="far fa-sign-in"></i><a href="#">查找密码</a></span>
                             @endif
