@@ -14,6 +14,7 @@ body {background: linear-gradient(to right,#2ebf91,#8360c3);background-size:cove
 #login-box dd i{position:absolute; font-size:23px; top:9px; left:20px;color:#65768f}
 .form-login{height:42px; line-height:42px; background:#e2eaf6; border-radius:50px; width:100%; box-sizing:border-box; padding-left:50px;font-size:16px;border:1px solid #f5f7fa; -webkit-appearance:none; }
 .form-login:focus{outline:0; }
+.errors { color: red; font-size: 16px; text-align: center; }
 .options{ text-align:left; padding:0px 30px 15px; }
 .options a{ text-decoration:underline; cursor:pointer; font-size: 14px;}
 #login-box  p.btn{padding:0px 30px 15px; }

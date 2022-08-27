@@ -26,8 +26,7 @@ Route::get('/delivery', 'DeliveryController@index')->name('delivery');
 Route::get('/stockpro', 'StockProController@index')->name('stockpro');
 
 // admin
-
-Route::group(['as' => 'admin.', 'prefix' => 'admin'], function () {
+Route::group(['middleware' => ['verify_role:admin'], 'as' => 'admin.', 'prefix' => 'admin'], function () {
     // Home
     Route::get('/', 'Admin\HomeController@index')->name('home');
 

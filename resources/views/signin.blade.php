@@ -57,9 +57,10 @@
                 <dd><input name="sMemPw" id="sMemPw" type="password" onKeyDown="javascript:if(event.keyCode == 13) fnAdmLogin();" class="form-login" title="密码" value="" size="30" maxlength="20"><i class="icon-material-outline-https"></i> </dd>
             </dl>
             <p class="btn"><a onclick="fnAdmLogin()" target="_self">Login</a></p>
-            <p class="options">
-                <a href="{{ route('view_signup') }}">Register</a>
-            </p>
+            <p class="options"><a href="{{ route('view_signup') }}">Register</a></p>
+            @if (Session::has('signin_errors'))
+                <p class="errors">{{ Session::get('signin_errors') }}</p>
+            @endif
 		</form>
 	</div>
 </div>

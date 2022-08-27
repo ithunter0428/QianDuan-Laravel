@@ -82,10 +82,14 @@ class HomeController extends Controller
                 'password' => $request->get('sMemPw'),
             ];
 
-            Auth::attempt($credentials);
+            if (Auth::attempt($credentials))
+                Session::forget('signin_errors');
+            else
+                Session::put('signin_errors', 'Wrong email and password');
+
         } catch (\Throwable $th) {
         }
-        return redirect('/');
+        return Redirect::route('view_signin');
     }
 
     public function logout()
