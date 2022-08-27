@@ -1,0 +1,25 @@
+
+$(document).ready(function() {
+
+	// 달력 Init
+	$(".dtPic" ).datepicker({
+		dateFormat:'yy-mm-dd',
+		changeMonth:true,
+		changeYear:true
+	});
+
+});
+
+// Enter 검색
+$(document).on("keydown", ".EnterKey", function(key) {
+	if ( key.keyCode == 13 ) {
+		fnSearch();
+	}
+});
+
+
+
+// 검색
+function fnSearch( FrmNm ) {
+	$("#frmSearch").submit();
+}

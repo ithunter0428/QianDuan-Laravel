@@ -1,0 +1,84 @@
+var FrmNm = "#frmAddSvc";
+
+$(document).on("mouseup", "input", function(event) {
+	$(this).select();
+});
+
+// 숫자/자릿수
+$(document).on("blur, change", ".Chip", function() {
+	var fDigit = $(this).attr('Chip');
+
+	$(this).val( fnNumChiper($(this).val(), fDigit) );
+});
+
+
+// 금액 자릿수
+$(document).on("blur, change", "input[name='REF_3'], select[name='REF_2']", function() {
+	var fDigit = '', fObj = '';
+
+	if ( $(this).attr("name") == 'REF_3' ) {
+		fDigit = $(this).parent().find("select[name='REF_2'] option:selected").attr("Digit");
+		fObj = $(this);
+	} else {
+		fDigit = $("option:selected", this).attr("Digit");
+		fObj = $(this).parent().find("input[name='REF_3']");
+	}
+
+	fObj.val( fnNumChiper(fObj.val(), fDigit) );
+});
+
+
+// 저장
+$(document).on("click", ".BtnSave", function() {
+	var oField = null;
+
+	//$(FrmNm).attr("action", "./AddSvc_M.asp").submit();
+	//return;
+
+	if ( confirm("부가서비스 정보를 저장하시겠습니까?") ) {
+
+		$.ajax({ url: "./AddSvc_M.asp" ,
+			method: 'POST',
+			data : $(FrmNm).serialize(),
+			dataType : 'json',
+			success: function(data) { 
+				switch ( data.RST_NO ) {
+				case "0":
+					top.location.reload();
+					break;
+				default: alert(data.RST_NO+' 정상적으로 저장되지 않았습니다.\n솔루션 관리자게에 문의하십시오.');
+					break;
+				}
+			},
+			error: function(e) {
+				alert( e.responseText );
+			}
+		}); 
+	}
+});
+
+// USD 환율
+function fnCnyUsdExg_M(){
+	
+	if ( confirm("USD 환율을 저장하시겠습니까?") ) {
+
+		$.ajax({ url: "./AddSvc_M.asp" ,
+			method: 'POST',
+			data : $("#frmCnyUsd").serialize(),
+			dataType : 'json',
+			success: function(data) { 
+				switch ( data.RST_NO ) {
+				case "0":
+					top.location.reload();
+					break;
+				default: alert(data.RST_NO+' 정상적으로 저장되지 않았습니다.\n솔루션 관리자에게 문의하십시오.');
+					break;
+				}
+			},
+			error: function(e) {
+				alert( e.responseText );
+			}
+		}); 
+	}
+
+}

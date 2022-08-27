@@ -1,0 +1,109 @@
+
+<!-- saved from url=(0050)http://ds2.areumsoft.co.kr/Admin/Sms/SmsText_S.asp -->
+<html class="no-js" lang="ko-KR"><!--<![endif]--><!--[if IE 6]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie6" lang="ko-KR"> <![endif]--><!--[if IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie7" lang="ko-KR"> <![endif]--><!--[if IE 8]> <html class="no-js lt-ie10 lt-ie9 ie8" lang="ko-KR"> <![endif]--><!--[if IE 9]> <html class="no-js lt-ie10 ie9" lang="ko-KR"> <![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+
+ 	<title>世强物流管理系统</title>
+
+	
+	
+	<meta name="robots" content="noindex,nofollow">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="./AdmReset.css">
+	<link rel="stylesheet" type="text/css" href="./AdmCommon.css">
+	<link rel="stylesheet" type="text/css" href="./AdmBoard.css">
+	<link rel="stylesheet" type="text/css" href="./jquery-ui.css">
+	<script type="text/javascript" src="./jquery.js.下载"></script>
+	<script type="text/javascript" src="./jquery-ui.min.js.下载"></script>
+	<script type="text/javascript" src="./Common.js.下载"></script>
+	<script>
+		function fnTimeLoop() {
+			$.ajax({ url: "/Front/SessionEmpty.asp" ,
+				method: 'GET',
+				dataType : 'html',
+				success: function(data) { 
+				},
+				error: function(e) {
+				}
+			});
+		}
+
+		var sTimes = setInterval(fnTimeLoop, 5*60*1000);
+	</script>
+<script type="text/javascript" src="./SmsText_S.js.下载"></script></head>
+
+
+
+
+
+<body style="background: none;">
+<div style="padding:5px;">
+
+	<div class="t_board">
+
+
+		<div class="titSub" style="padding-bottom:11px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+			文本框
+		</font></font></div>
+
+			<form name="frmText" id="frmText" method="post">
+
+			<table width="100%" border="0" cellpadding="0" cellspacing="5">
+
+<tbody><tr valign="top">
+				<td>
+
+					<p class="bold" style="height:20px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">【国内到货】国内派送</font></font></p>
+					<textarea name="CONT" id="CONT" class="smsText" style="cursor:pointer;" onclick="parent.fnMod(&#39;11&#39;, this.value);">택배업체에서 수거하였습니다. 익일 발송 预期</textarea>
+
+				</td>
+
+				<td>
+
+					<p class="bold" style="height:20px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">【国内到达】清关完成（未付）</font></font></p>
+					<textarea name="CONT" id="CONT" class="smsText" style="cursor:pointer;" onclick="parent.fnMod(&#39;4&#39;, this.value);">결제부탁합니다.</textarea>
+
+				</td>
+
+				<td>
+
+					<p class="bold" style="height:20px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[错误] 错误到达</font></font></p>
+					<textarea name="CONT" id="CONT" class="smsText" style="cursor:pointer;" onclick="parent.fnMod(&#39;8&#39;, this.value);">入库错误</textarea>
+
+				</td>
+</tr><tr>	<td colspan="3" height="20"></td></tr><tr valign="top">
+				<td>
+
+					<p class="bold" style="height:20px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[海外到达/发货] 完成发货</font></font></p>
+					<textarea name="CONT" id="CONT" class="smsText" style="cursor:pointer;" onclick="parent.fnMod(&#39;1&#39;, this.value);">完成出库</textarea>
+
+				</td>
+
+				<td>
+
+					<p class="bold" style="height:20px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支付请求</font></font></p>
+					<textarea name="CONT" id="CONT" class="smsText" style="cursor:pointer;" onclick="parent.fnMod(&#39;13&#39;, this.value);">12345 订单 건 배송비 결제 바랍니다.test</textarea>
+
+				</td>
+
+				<td>
+
+					<p class="bold" style="height:20px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与订单（产品）相关闭的通知</font></font></p>
+					<textarea name="CONT" id="CONT" class="smsText" style="cursor:pointer;" onclick="parent.fnMod(&#39;12&#39;, this.value);">12345 订单 건에 알림메시지가 있으니 확인바랍니다.</textarea>
+
+				</td>
+</tr><tr>	<td colspan="3" height="20"></td></tr>
+			
+			</tbody></table>
+
+			</form>
+
+
+
+	</div>
+</div>
+ 
+
+
+</body></html>

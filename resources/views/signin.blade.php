@@ -3,15 +3,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<link rel="stylesheet" type="text/css" href="{{ asset('/admin_files/AdmReset.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('/admin_files/AdmCommon.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('/admin_files/AdmBoard.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('/admin_files/jquery-ui.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('/admin_files/AdmLogin.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('/admin_files/layout/AdmReset.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('/admin_files/layout/AdmCommon.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('/admin_files/layout/AdmBoard.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('/admin_files/layout/jquery-ui.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('/admin_files/layout/AdmLogin.css') }}">
 
-<script type="text/javascript" src="{{ asset('/admin_files/jquery.js') }}"></script>
-<script type="text/javascript" src="{{ asset('/admin_files/jquery-ui.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('/admin_files/Common.js') }}"></script>
+<script type="text/javascript" src="{{ asset('/admin_files/layout/jquery.js') }}"></script>
+<script type="text/javascript" src="{{ asset('/admin_files/layout/jquery-ui.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('/admin_files/layout/Common.js') }}"></script>
 
 <script type="text/javascript">
     $(document).ready(function() {

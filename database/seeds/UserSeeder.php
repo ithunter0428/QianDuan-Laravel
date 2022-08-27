@@ -14,17 +14,19 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\User::class, 10)->create();
+        factory(App\Models\User::class, 21)->create();
         DB::table('users')->insert([
-            'first_name' => "Ahmed",
-            'last_name' => "Hamada",
-            'phone' => "0666336633",
-            'address' => "Rue 55, Qt X",
-            'city' => "Rabat",
+            'name' => 'Paek',
             'email' => "admin@gmail.com",
+            'user_id' => "admin",
             'password' => Hash::make('password'),
-            'remember_token' => Str::random(10),
+            'grade' => 1,
+            'mailbox_number' => "SP400",
+            'cellphone_number' => "01093497611",
+            'advance_payment' => 0,
+            'last_visited_at' => date('Y-m-d H:i:s'),
             'is_admin' => 1,
+            'remember_token' => Str::random(10),
         ]);
     }
 }

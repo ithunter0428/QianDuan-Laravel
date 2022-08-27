@@ -2,14 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Validator;
-use App\User;
 use Session;
 use Hash;
+use Redirect;
 
 class HomeController extends Controller
 {
@@ -17,7 +19,7 @@ class HomeController extends Controller
     {
         $user = Auth::user();
         if ($user && $user->is_admin) {
-            return redirect('/admin');
+            return Redirect::route('admin.main.home');
         }
 
         return view('index');

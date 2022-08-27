@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-style: nomal;
+}
+
+img {
+	border:0;
+	vertical-align: middle;
+}
+
+hr { display: none; }
+
+table {}
+table, th, td { border-collapse: collapse; font-size:12px;}
+
+caption { display: none }
+
+body {
+	width: 100%;
+	color: #707070;
+	font: 400 12px/160% dotum, 돋움, gulim, 굴림, Arial, Helvetica, sans-serif;
+	background: #fff;
+}
+
+ul { list-style: none; }
+
+a {text-decoration: none;color:#444;}
+a:hover {text-decoration: none;}
+
+input.txt {
+	width: 122px;
+	height: 20px;
+	line-height: 18px;
+	border: 1px solid #d6d6d6;
+	background: #fff;
+	color: #777;
+	vertical-align: middle;
+}
+
+textarea {
+	overflow: auto;
+	overflow-x: hidden;
+	font-family: "Nanum Gothic", Nanum Gothic, dotum;
+}
+
+button, input, select, textarea {
+	font-family: "Nanum Gothic", Nanum Gothic, '돋움',Dotum,AppleGothic,sans-serif;
+	font-size: 12px;
+	color: #444;
+	border:1px solid #d6d6d6;
+}
+
+select {clear:both; height:26px; line-height:26px; border:1px solid #d0d2d7; padding: 0px 5px;}
+select:disabled {border:1px solid #d0d2d7; background:#e0e0e0;}
+
+legend {
+	display: none;
+}
+
+img, fieldset, iframe {
+	border: none;
+}
+
+
+/* Common */
+.cfx{zoom:1;}
+.cfx:after{display:block;clear:both;content:"";}
+.blind {position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden;font-size:1px;line-height:1px;visibility:hidden;}
+.vt {vertical-align:top;}
+.vm {vertical-align:middle;}
+.fl {float:left;}
+.fr {float:right;}
+.tl {text-align:left}
+.tr {text-align:right;}
+.tc {text-align:center}
+.spacing {letter-spacing:normal !important;}
+.hide {display:none;}
+.show {display:block;}

@@ -1,0 +1,36 @@
+
+
+// 삭제
+function fnDel_M() {
+	var oField = null;
+	var CenterSeq = $("select[name='CENTER_SEQ']").val();
+	var DlvrWayCd = $("select[name='CENTER_SEQ'] option:selected").attr('DlvrWayCd');
+
+	if ( CenterSeq == '' || CenterSeq == '0' ) {
+		alert('센터를 선택하십시오.'); return;
+	}
+
+	if ( !confirm("선택 센터 요율표를 삭제하시겠습니까?") ) {
+		return;
+	}
+
+	$.ajax({ url: "./DlvrFee_IMD.asp" ,
+		method: 'POST',
+		data : {sKind: "D", CENTER_SEQ: CenterSeq, DLVR_WAY_CD:DlvrWayCd },
+		dataType : 'json',
+		success: function(data) { 
+			switch ( data.RST_NO ) {
+			case "0":
+				top.location.reload();
+				break;
+			default: alert(data.RST_NO+' 정상적으로 저장되지 않았습니다.\n솔루션 관리자게에 문의하십시오.');
+				break;
+			}
+		},
+		error: function(e) {
+			alert( e.responseText );
+		}
+	}); 
+
+
+}

@@ -2,7 +2,7 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\User;
+use App\Models\User;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
 
@@ -19,14 +19,16 @@ use Illuminate\Support\Str;
 
 $factory->define(User::class, function (Faker $faker) {
     return [
-        'first_name' => $faker->firstName(),
-        'last_name' => $faker->lastName(),
-        'phone' => $faker->phoneNumber(),
-        'address' => $faker->streetAddress(),
-        'city' => $faker->city(),
+        'name' => $faker->firstName() . ' ' . $faker->lastName(),
         'email' => $faker->unique()->safeEmail,
+        'user_id' => Str::random(6),
         'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
-        'remember_token' => Str::random(10),
+        'grade' => mt_rand(0, 5),
+        'mailbox_number' => 'SP' . sprintf('%03d', mt_rand(1, 400)),
+        'cellphone_number' => $faker->phoneNumber(),
+        'advance_payment' => 0,
+        'last_visited_at' => date('Y-m-d'),
         'is_admin' => 0,
+        'remember_token' => Str::random(10),
     ];
 });
