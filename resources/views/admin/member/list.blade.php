@@ -24,7 +24,7 @@
 			<h4 class="white corners"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会员管理 &gt; 会员列表</font></font></h4>
 		</div>
 		<div class="box-container corners02">
-            <!-- Begin 검색 폼 -->
+            <!-- Begin Search Form -->
 			<div class="search-board">
 				<form name="frmSearch" id="frmSearch" method="get">
 					<input type="hidden" name="gMnu1" id="gMnu1" value="102">
@@ -77,7 +77,7 @@
                     </table>
 				</form>
 			</div>
-            <!-- End 검색 폼 -->
+            <!-- End Search Form -->
 
 			<div class="notice-board">
 				<form name="frmList" id="frmList" method="post">

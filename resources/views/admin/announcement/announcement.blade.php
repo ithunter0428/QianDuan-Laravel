@@ -29,11 +29,6 @@
 
 		<div class="box-container corners02">
 
-
-
-
-
-			<!-- Begin 검색 폼 -->
 			<div class="search-board">
 
 				<form name="frmSearch" id="frmSearch" method="get">
