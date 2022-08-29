@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin\Announcement;
 
 use App\Http\Controllers\Controller;
-use App\Models\User;
+use App\Models\Announcement\AnnouncementSettings;
 
 use Illuminate\Http\Request;
 use Redirect;
@@ -12,6 +12,9 @@ class SettingController extends Controller
 {
     public function index()
     {
-        return view('admin.announcement.setting');
+        $settings = AnnouncementSettings::get();
+        return view('admin.announcement.setting', [
+            'settings' => $settings,
+        ]);
     }
 }
