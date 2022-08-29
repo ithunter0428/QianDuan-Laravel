@@ -23,7 +23,8 @@
 			<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会员列表</font></font></h2>
 			<h4 class="white corners"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会员管理 &gt; 会员列表</font></font></h4>
 		</div>
-		<div class="box-container corners02">
+
+        <div class="box-container corners02">
             <!-- Begin Search Form -->
 			<div class="search-board">
 				<form name="frmSearch" id="frmSearch" method="get">
@@ -118,7 +119,7 @@
                                 </td>
                                 <td class="alCenter">
                                     <font style="vertical-align: inherit;">[Level {{ $user->grade }}]</font>
-                                    <a href="javascript:" memcode="{{ $user->id }}" class="tipMem" data-hasqtip="3">
+                                    <a onclick="fnView({{ $user->id }})" memcode="{{ $user->id }}" class="tipMem" data-hasqtip="3">
                                         <span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> {{ $user->name }} </font></font></span>
                                     </a>
                                 </td>
@@ -179,6 +180,68 @@
 	</div>
 </div>
 </div>
+
+<div id="view_modal" class="modal fade" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            Detail View
+          </div>
+            <div class="modal-body">
+                <form method="post" name="frmSmsCont" id="frmSmsCont">
+                    <input type="hidden" name="sKind" value="M">
+                    <input type="hidden" name="SMS_SEQ" value="11">
+                    <input type="hidden" name="STATE_SEQ" value="0">
+
+                    <table class="order_write order_table_top">
+                        <colgroup>
+                            <col width="15%">
+                            <col width="35%">
+                            <col width="15%">
+                            <col width="35%">
+                        </colgroup>
+
+                        <tbody><tr>
+                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标题</font></font></th>
+                            <td colspan="3">
+                                <input type="text" class="iptBox1 w30" name="SBJ" maxlength="80" value="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文字内容</font></font></th>
+                            <td colspan="3"><textarea style="width:30%;height:100px;padding:10px;" name="CONT" id="CONT" maxlength="400" onkeyup="chkStrByte();"></textarea></td>
+                        </tr>
+                        <tr>
+                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">字节</font></font></th>
+                            <td><input type="text" class="iptBox1" name="SMS_BYTE" id="SMS_BYTE" value="43" maxlength="3" style="border:0;width:20px;" readonly=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">字节</font></font></td>
+                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用与否</font></font></th>
+                            <td>
+                                <select name="USE_YN" id="USE_YN">
+                                    <option value="Y" selected="">使用</option>
+                                    <option value="N">未使用</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                    </tbody></table>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <div class="btn-area alCenter">
+                    <span class="whGraBtn_bg ty2">
+                        <button type="button" class="txt" onclick="fnSave()"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Save</font></font></button>
+                    </span>
+                    <span class="whGraBtn ty2">
+                        <button type="button" class="txt" onclick="fnViewModalClose()" data-dismiss="modal" aria-hidden="true"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Close</font></font></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="BtmSolution">
     <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font><a href="#" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> </font></font></a></h3>
 </div>
