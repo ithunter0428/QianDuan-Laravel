@@ -19,49 +19,42 @@
 <div class="conBox">
 
 <div id="mid-col">
-
 	<div class="box" style="width:70%;">
-
 		<div class="nTitle">
 			<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">公告</font></font></h2>
 			<h4 class="white corners"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">公告管理 &gt; 通知</font></font></h4>
 		</div>
-
 		<div class="box-container corners02">
-
 			<div class="search-board">
-
 				<form name="frmSearch" id="frmSearch" method="get">
 					<input type="hidden" name="gMnu1" value="104">
 					<input type="hidden" name="gMnu2" value="10402">
 					<input type="hidden" name="sGo" value="1">
 					<input type="hidden" name="sBbCode" value="1">
 					<input type="hidden" name="sStateNm" value="">
-
-				<table cellspacing="1">
-				<tbody><tr>
-					<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页</font></font></th>
-					<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">日期</font></font></th>
-
-
-					<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会员名称</font></font></th>
-					<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标题</font></font></th>
-					<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内容</font></font></th>
-					<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文章编号</font></font></th>
-					<th></th>
-				</tr>
+					<table cellspacing="1">
+				<tbody>
+					<tr>
+						<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页</font></font></th>
+						<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">日期</font></font></th>
+						<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会员名称</font></font></th>
+						<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标题</font></font></th>
+						<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内容</font></font></th>
+						<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文章编号</font></font></th>
+						<th></th>
+					</tr>
 				<tr>
 					<td>
 						<select name="sPageSize">
 							<option value="10" selected=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10</font></font></option>
-<option value="15"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">15</font></font></option>
-<option value="20"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">20</font></font></option>
-<option value="25"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">25</font></font></option>
-<option value="30"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">30</font></font></option>
-<option value="35"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">35</font></font></option>
-<option value="40"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">40</font></font></option>
-<option value="45"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">45</font></font></option>
-<option value="50"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">50</font></font></option>
+							<option value="15"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">15</font></font></option>
+							<option value="20"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">20</font></font></option>
+							<option value="25"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">25</font></font></option>
+							<option value="30"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">30</font></font></option>
+							<option value="35"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">35</font></font></option>
+							<option value="40"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">40</font></font></option>
+							<option value="45"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">45</font></font></option>
+							<option value="50"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">50</font></font></option>
 
 						</select>
 					</td>
@@ -94,7 +87,6 @@
 				</tbody></table>
 
 				</form>
-				<!-- End 검색 폼 -->
 
 			</div>
 

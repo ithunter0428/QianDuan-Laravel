@@ -88,3 +88,10 @@ Route::delete('features/{feature}', 'FeatureController@destroy');
 Route::get('reviews/hotel/{hotel}/', 'ReviewController@getHotelReviews');
 //if logged
 Route::get('reviews/hotel/{hotel}/{user}', 'ReviewController@getHotelReviews');
+
+// Announcement routes
+Route::group(['prefix' => 'announcement'], function () {
+    Route::group(['prefix' => 'setting'], function () {
+        Route::put('/{setting}', 'Admin\Announcement\SettingController@update');
+    });
+});

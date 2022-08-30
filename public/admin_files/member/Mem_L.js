@@ -1,6 +1,4 @@
 $(document).ready(function() {
-    $('#example').DataTable();
-
 	// TollTip
 	$('.tipMem').qtip({
 		style: {
@@ -49,8 +47,16 @@ function fnSearch( FrmNm, Go ) {
 }
 
 // 보기
-function fnView( MainCd ) {
-	top.location.href='./CommCd_V.asp?'+$("#frmSearch").serialize()+"&MAIN_CD="+MainCd;
+function fnView( MemCode ) {
+	$("#view_modal").modal('show');
+}
+
+function fnSave() {
+    alert("Save");
+}
+
+function fnViewModalClose() {
+    $("#view_modal").modal('hide');
 }
 
 // 등급변경
