@@ -177,6 +177,7 @@ Route::group(['middleware' => ['verify_role:admin'], 'as' => 'admin.', 'prefix' 
         // Recommended Product
         Route::group(['as' => 'event.', 'prefix' => 'event'], function () {
             Route::get('/', 'Admin\Coupon\EventController@index')->name('home');
+            Route::put('/', 'Admin\Coupon\EventController@store');
         });
     });
 

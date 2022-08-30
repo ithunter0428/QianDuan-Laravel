@@ -145,21 +145,48 @@
 				</tr>
 
 
-
+				@foreach( $coupons as $coupon )
 				<tr>
-					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会员活动</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font></td>
-					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运输费</font></font></td>
-					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">12,222 美元 1 件</font></font></span></td>
-					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2022-05-19 ~ 2022-05-21</font></font></td>
-					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">60 天</font></font></td>
-					<td class=""><span class="red1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">停止</font></font></span></td>
+					<td class="alCenter">
+						<span class="bold"><font style="vertical-align: inherit;">
+							<font style="vertical-align: inherit;">{{$coupon['issue_classification'] == 1 ? '会员活动' : ''}}</font></font>
+					    </span>
+						<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(1)</font></font>
+					</td>
+					<td class="alCenter"><font style="vertical-align: inherit;">
+						<font style="vertical-align: inherit;">运输费</font></font>
+					</td>
+					<td class="alCenter"><span class="bold">
+						<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{$coupon['coupon_amount']}} 美元 {{$coupon['coupon_unit']}} 件</font></font></span>
+					</td>
+					<td class="alCenter">
+						<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+						{{ Carbon\Carbon::parse($coupon['effective_st_date'])->format('yy-m-d') }}	~ {{ Carbon\Carbon::parse($coupon['effective_ed_date'])->format('yy-m-d') }}</font>
+						</font>
+					</td>
+					<td class="alCenter">
+						<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $coupon['days_from_publication'] }} 天</font></font>
+					</td>
+					<td class="">
+						<span class="{{ $coupon['status'] == 0 ? 'red1' : 'bold'}}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							{{ $coupon['status'] == 0 ? '停止' : '使用'}}</font></font>
+						</span>
+					</td>
 					<td>
+						@if ($coupon['status'] == 0)
+						<span class="whGraBtn_bg ty2">
+							<button type="button" class="txt" onClick="fnUse_M( {{$coupon['id']}} , 1);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font></button>
+						</span>
+						@else
+						<span class="whRedBtn_bg ty2">
+							<button type="button" class="txt" onClick="fnUse_M( {{$coupon['id']}} , 0);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">停止</font></font></button>
+						</span>
 
-							<span class="whGraBtn_bg ty2"><button type="button" class="txt" onClick="fnUse_M(&#39;1&#39;, &#39;Y&#39;);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font></button></span>
+						@endif
 
 					</td>
 				</tr>
-
+				@endforeach
 
 
 				</tbody></table>

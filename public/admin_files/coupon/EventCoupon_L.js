@@ -77,8 +77,7 @@ function fnReg_M() {
 	//return;
 
 	gSubmit = true;
-
-	$.ajax({ url: "./EventCoupon_IM.asp" ,
+		$.ajax({ url: "./EventCoupon_IM.asp" ,
 		method: 'POST',
 		data : $(gFrmNm).serialize(),
 		dataType : 'json' , 
@@ -102,7 +101,7 @@ function fnReg_M() {
 // 사용/중지 변경
 function fnUse_M(IssueDvsCd, UseYn) {
 	if ( confirm('해당 이벤트의 사용 변경을 하시겠습니까?') ) {
-
+		
 		$.ajax({ url: "./EventCoupon_IM.asp" ,
 			method: 'POST',
 			data : {sKind: "P", ISSUE_DVS_CD: IssueDvsCd, USE_YN: UseYn},
