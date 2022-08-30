@@ -44,23 +44,23 @@
 <div class="container">
 	<div id="login-box">
 		<div class="img"><i class="icon-feather-log-in"></i></div>
-		<h2>Login</h2>
+		<h2>登录</h2>
 
 		<form name="FrmLogin" id="FrmLogin" method="get" action="{{ route("login") }}">
             <dl>
                 @csrf
-                <dt>Email:</dt>
+                <dt>电子邮件:</dt>
                 <dd><input name="sMemEmail" id="sMemEmail" class="form-login" title="ID" size="30" maxlength="20">
                 <i class="icon-material-outline-account-circle"></i>
                 </dd>
-                <dt>Password:</dt>
+                <dt>密码:</dt>
                 <dd><input name="sMemPw" id="sMemPw" type="password" onKeyDown="javascript:if(event.keyCode == 13) fnAdmLogin();" class="form-login" title="密码" value="" size="30" maxlength="20"><i class="icon-material-outline-https"></i> </dd>
             </dl>
             @if (Session::has('signin_errors'))
                 <p class="errors">{{ Session::get('signin_errors') }}</p>
             @endif
-            <p class="btn"><a onclick="fnAdmLogin()" target="_self">Login</a></p>
-            <p class="options"><a href="{{ route('view_signup') }}">Register</a></p>
+            <p class="btn"><a onclick="fnAdmLogin()" target="_self">登录会员</a></p>
+            <p class="options"><a href="{{ route('view_signup') }}">注册会员</a></p>
 		</form>
 	</div>
 </div>
