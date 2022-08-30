@@ -344,7 +344,7 @@
 			<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font><a href="#" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> </font></font></a></h3>
 		</div>
 	</div>
-<div id="distribute_coupon_modal" class="modal fade" style="max-width: 800px">
+<div id="distribute_coupon_modal" class="modal fade" style="max-width: 800px; height: 600px">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
@@ -430,7 +430,9 @@
 					<div>
 						<div>
 							<label for="">User Name</label>
-							<input type="text">
+							<input type="text" id="sMemNm" maxlength="40" class="iptBox1 EnterKey" style="width:80px;" value="">
+							<span class="whGraBtn_bg ty2"><button type="button" class="txt" onClick="fnSearch(&#39;frmSearch&#39;, &#39;1&#39;);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索</font></font></button></span> &nbsp;
+
 						</div>
 						<!-- Member Table -->
 						<table border="1">

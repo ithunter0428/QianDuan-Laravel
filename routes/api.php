@@ -89,3 +89,9 @@ Route::get('reviews/hotel/{hotel}/', 'ReviewController@getHotelReviews');
 //if logged
 Route::get('reviews/hotel/{hotel}/{user}', 'ReviewController@getHotelReviews');
 
+// Coupon API Routes
+Route::group(['prefix' => 'coupon'], function(){
+    Route::group(['prefix' => 'member_cupon'], function() {
+        Route::put('/{member}', 'Admin\Coupon\ListController@addMemberCoupon');
+    });
+});
