@@ -13,6 +13,6 @@ class MemberCupon extends Model
     // Get the member
     public function member()
     {
-        return $this->hasOne(User::class);
+        return $this->hasOne(User::class, 'member_id', 'id');
     }
 }

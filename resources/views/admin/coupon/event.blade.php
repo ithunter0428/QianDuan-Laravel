@@ -178,7 +178,7 @@
 							<button type="button" class="txt" onClick="fnUse_M( {{$coupon['id']}} , 1);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font></button>
 						</span>
 						@else
-						<span class="whRedBtn_bg ty2">
+						<span class="whRe	dBtn_bg ty2">
 							<button type="button" class="txt" onClick="fnUse_M( {{$coupon['id']}} , 0);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">停止</font></font></button>
 						</span>
 

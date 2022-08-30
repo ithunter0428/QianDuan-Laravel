@@ -89,5 +89,3 @@ Route::get('reviews/hotel/{hotel}/', 'ReviewController@getHotelReviews');
 //if logged
 Route::get('reviews/hotel/{hotel}/{user}', 'ReviewController@getHotelReviews');
 
-// Cupon List routes
-Route::post('cupons/search', 'Admin.Cupon.ListController@getSearchData');

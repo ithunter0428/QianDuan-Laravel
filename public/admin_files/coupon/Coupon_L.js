@@ -6,6 +6,7 @@ $(document).ready(function() {
 		changeMonth:true,
 		changeYear:true
 	});
+	
 
 	// TollTip
 	$('.tipMem').qtip({
@@ -35,8 +36,25 @@ $(document).ready(function() {
 		}
 	});
 
+	// Load List
+
+	// 
+	$('[name=coupon_radio]').change(function() {
+		var value = $(this).val()
+		if (value == 'all') {
+
+		}
+		else if (value === 'one') {
+			
+		}
+	})
+
 });
 
+// Load List
+function fnGetList () {
+	$.post()
+}
 
 // Enter 검색
 $(document).on("keydown", ".EnterKey", function(key) {
@@ -56,6 +74,11 @@ function fnSearch( FrmNm, Go ) {
 	$("#"+FrmNm + " input[name='sGo']").val(Go);
 
 	$("#"+FrmNm).submit();
+}
+
+// Distribute Coupon
+function fnOpenCouponModal() {
+	$('#distribute_coupon_modal').modal()
 }
 
 // 삭제

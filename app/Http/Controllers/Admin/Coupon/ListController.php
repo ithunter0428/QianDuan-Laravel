@@ -13,8 +13,8 @@ class ListController extends Controller
 {
     public function index()
     {
-
-        return view('admin.coupon.list');
+        $users = User::all();
+        return view('admin.coupon.list', ['users' => $users]);
     }
 
     public function getSearchData()
