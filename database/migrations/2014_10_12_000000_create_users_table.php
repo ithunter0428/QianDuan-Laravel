@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('user_id')->unique();
             $table->string('password');
             $table->integer('grade')->default(0);
+            $table->integer('status')->default(1); 
             $table->string('mailbox_number')->nullable();
             $table->string('cellphone_number')->nullable();
             $table->float('advance_payment')->default(0);

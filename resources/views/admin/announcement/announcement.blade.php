@@ -25,7 +25,6 @@
 			<h4 class="white corners"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">公告管理 &gt; 通知</font></font></h4>
 		</div>
 		<div class="box-container corners02">
-			<!-- Begin Search Platform -->
 			<div class="search-board">
 				<form name="frmSearch" id="frmSearch" method="get">
 					<input type="hidden" name="gMnu1" value="104">
@@ -88,7 +87,6 @@
 				</tbody></table>
 
 				</form>
-				<!-- End Search Platform -->
 
 			</div>
 

@@ -21,6 +21,7 @@ class UserSeeder extends Seeder
             'user_id' => "admin",
             'password' => Hash::make('password'),
             'grade' => 1,
+            'status' => 1,
             'mailbox_number' => "SP400",
             'cellphone_number' => "01093497611",
             'advance_payment' => 0,

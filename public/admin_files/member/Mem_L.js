@@ -1,6 +1,4 @@
 $(document).ready(function() {
-    $('#example').DataTable();
-
 	// TollTip
 	$('.tipMem').qtip({
 		style: {
@@ -32,14 +30,14 @@ $(document).ready(function() {
 });
 
 
-// Enter 검색
+// Enter Search
 $(document).on("keydown", ".EnterKey", function(key) {
 	if ( key.keyCode == 13 ) {
 		fnSearch('frmSearch', '1');
 	}
 });
 
-// 검색
+// Search
 function fnSearch( FrmNm, Go ) {
 	if ( Go != '' ) {
 		$("#"+FrmNm + " input[name='sGo']").val(Go);
@@ -49,8 +47,16 @@ function fnSearch( FrmNm, Go ) {
 }
 
 // 보기
-function fnView( MainCd ) {
-	top.location.href='./CommCd_V.asp?'+$("#frmSearch").serialize()+"&MAIN_CD="+MainCd;
+function fnView( MemCode ) {
+	$("#view_modal").modal('show');
+}
+
+function fnSave() {
+    alert("Save");
+}
+
+function fnViewModalClose() {
+    $("#view_modal").modal('hide');
 }
 
 // 등급변경
@@ -130,16 +136,16 @@ function fnFinalOut_M() {
 	}
 }
 
-// 탈퇴처리
+// 注销会员 （Kick out the user)
 function fnOut_M(MemCode) {
 	var oMemCode = $("input[name='ckMEM_CODE']");
 	/*
 	if ( fnCkBoxVal(oMemCode) == '' ) {
-		alert('회원을 선택하십시오.');
+		alert('请选定成员吧。');
 		return;
 	}*/
 
-	if ( confirm('선택 회원을 탈퇴시키시겠습니까?') ) {
+	if ( confirm('您确定要取消选定的成员吗') ) {
 		$.ajax({ url: "./Mem_IMD.asp" ,
 			method: 'POST',
 			data : {sKind: "D", MEM_CODE: MemCode},
