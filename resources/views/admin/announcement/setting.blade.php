@@ -59,126 +59,32 @@
 					</tr>
 					@foreach ($settings as $setting)
 					<tr>
-						<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1:1咨询 (2)</font></font></span></td>
-						<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1:1查询（我自己的帖子）</font></font></span></td>
-						<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未使用</font></font></span></td>
-						<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font></span></td>
-						<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font></span></td>
-						<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font></span></td>
-						<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">仅限会员</font></font></span></td>
-						<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font></span></td>
-						<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10</font></font></td>
-						<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></td>
-						<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font></td>
+						<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $setting->board_name }}</font></font></span></td>
+						<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $setting->type }}</font></font></span></td>
+						<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $setting->use_password ? '' : '未' }}使用</font></font></span></td>
+						<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $setting->use_title ? '' : '未' }}使用</font></font></span></td>
+						<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $setting->use_state ? '' : '未' }}使用</font></font></span></td>
+						<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $setting->write_permission ? '' : '未' }}使用</font></font></span></td>
+						<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $setting->view_all ? '全部' : '仅限会员' }}</font></font></span></td>
+						<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $setting->comment_permission ? '' : '未' }}使用</font></font></span></td>
+						<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $setting->page_count }}</font></font></td>
+						<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $setting->notification_count }}</font></font></td>
+						<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $setting->is_using ? '' : '未' }}使用</font></font></td>
 						<td class="listBtn">
-							<span class="whGraBtn ty2"><button type="button" class="txt" onclick="fnPopWinCT(&#39;./BbSet_W.asp?sKind=M&amp;sBbCode=2&#39;, &#39;BbSet_W&#39;, 1100, 800);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">修改</font></font></button></span>
-							<span class="whRedBtn ty2"><button type="button" class="txt" onclick="fnDel_M(&#39;2&#39;);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button></span>
+							<span class="whGraBtn ty2"><button type="button" class="txt" onclick="fnPopWinCT(&#39;./BbSet_W.asp?sKind=M&amp;sBbCode={{ $setting->id }}&#39;, &#39;BbSet_W&#39;, 1100, 800);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">修改</font></font></button></span>
+							<!-- <span class="whRedBtn ty2"><button type="button" class="txt" onclick="fnDel_M(&#39;2&#39;);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button></span> -->
 						</td>
 					</tr>
-				<tr>
-					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通知 (1)</font></font></span></td>
-					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">普通的</font></font></span></td>
-					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未使用</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未使用</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未使用</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未使用</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全部</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未使用</font></font></span></td>
-					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10</font></font></td>
-					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></td>
-					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font></td>
-					<td class="listBtn">
-						<span class="whGraBtn ty2"><button type="button" class="txt" onclick="fnPopWinCT(&#39;./BbSet_W.asp?sKind=M&amp;sBbCode=1&#39;, &#39;BbSet_W&#39;, 1100, 800);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">修改</font></font></button></span>
-						<span class="whRedBtn ty2"><button type="button" class="txt" onclick="fnDel_M(&#39;1&#39;);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button></span>
-					</td>
-				</tr>
-
-				<tr>
-					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">服务查询/建议 (6)</font></font></span></td>
-					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1:1查询（我自己的帖子）</font></font></span></td>
-					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未使用</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未使用</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">仅限会员</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未使用</font></font></span></td>
-					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10</font></font></td>
-					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></td>
-					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font></td>
-					<td class="listBtn">
-						<span class="whGraBtn ty2"><button type="button" class="txt" onclick="fnPopWinCT(&#39;./BbSet_W.asp?sKind=M&amp;sBbCode=6&#39;, &#39;BbSet_W&#39;, 1100, 800);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">修改</font></font></button></span>
-						<span class="whRedBtn ty2"><button type="button" class="txt" onclick="fnDel_M(&#39;6&#39;);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button></span>
-					</td>
-				</tr>
-
-				<tr>
-					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">活动 (5)</font></font></span></td>
-					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">缩略图</font></font></span></td>
-					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未使用</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未使用</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未使用</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未使用</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">仅限会员</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未使用</font></font></span></td>
-					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10</font></font></td>
-					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></td>
-					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font></td>
-					<td class="listBtn">
-						<span class="whGraBtn ty2"><button type="button" class="txt" onclick="fnPopWinCT(&#39;./BbSet_W.asp?sKind=M&amp;sBbCode=5&#39;, &#39;BbSet_W&#39;, 1100, 800);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">修改</font></font></button></span>
-						<span class="whRedBtn ty2"><button type="button" class="txt" onclick="fnDel_M(&#39;5&#39;);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button></span>
-					</td>
-				</tr>
-
-				<tr>
-					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">评论 (4)</font></font></span></td>
-					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">审查</font></font></span></td>
-					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未使用</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未使用</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未使用</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">仅限会员</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font></span></td>
-					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">16</font></font></td>
-					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></td>
-					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font></td>
-					<td class="listBtn">
-						<span class="whGraBtn ty2"><button type="button" class="txt" onclick="fnPopWinCT(&#39;./BbSet_W.asp?sKind=M&amp;sBbCode=4&#39;, &#39;BbSet_W&#39;, 1100, 800);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">修改</font></font></button></span>
-						<span class="whRedBtn ty2"><button type="button" class="txt" onclick="fnDel_M(&#39;4&#39;);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button></span>
-					</td>
-				</tr>
-
-				<tr>
-					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">常见问题 (FAQ) (3)</font></font></span></td>
-					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">常问问题</font></font></span></td>
-					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未使用</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未使用</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未使用</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全部</font></font></span></td>
-					<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未使用</font></font></span></td>
-					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10</font></font></td>
-					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></td>
-					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font></td>
-					<td class="listBtn">
-						<span class="whGraBtn ty2"><button type="button" class="txt" onclick="fnPopWinCT(&#39;./BbSet_W.asp?sKind=M&amp;sBbCode=3&#39;, &#39;BbSet_W&#39;, 1100, 800);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">修改</font></font></button></span>
-						<span class="whRedBtn ty2"><button type="button" class="txt" onclick="fnDel_M(&#39;3&#39;);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button></span>
-					</td>
-				</tr>
-
-				</tbody></table>
-			</div>
-
-
+					@endforeach
+				</tbody>
+			</table>
 		</div>
-
-
 	</div>
-
 </div>
-
-		</div>
-		<div class="BtmSolution">
-			<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font><a href="#" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> </font></font></a></h3>
-		</div>
-	</div>
+</div>
+</div>
+<div class="BtmSolution">
+	<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font><a href="#" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> </font></font></a></h3>
+</div>
+</div>
 @endsection
