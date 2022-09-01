@@ -235,6 +235,9 @@ Route::group(['middleware' => ['verify_role:admin'], 'as' => 'admin.', 'prefix' 
         // BankAcc
         Route::group(['as' => 'bank_acc.', 'prefix' => 'bank_acc'], function () {
             Route::get('/', 'Admin\Environment\BankAccController@index')->name('home');
+            Route::post('/', 'Admin\Environment\BankAccController@create');
+            Route::put('/{row}', 'Admin\Environment\BankAccController@update');
+            Route::delete('/{id}', 'Admin\Environment\BankAccController@destroy');
         });
 
         // ExgRt
