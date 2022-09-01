@@ -38,40 +38,49 @@ $(document).ready(function() {
 });
 
 
-// Enter 검색
+// Search when press enter
 $(document).on("keydown", ".EnterKey", function(key) {
 	if ( key.keyCode == 13 ) {
 		fnSearch('frmSearch', '1');
 	}
 });
 
-// 일자 취소
+// Cancel date selecting
 $(document).on("click", ".DtCan", function() {
 	$("input[name='"+$(this).attr("rel")+"']").val('');
 });
 
 
-// 검색
+// Search
 function fnSearch( FrmNm, Go ) {
 	if ( Go != '' ) {
 		$("#"+FrmNm + " input[name='sGo']").val(Go);
 	}
 
-	var oBbbSeq = $("#"+FrmNm + " input[name='sBbsSeq']");
+	var oBbbSeq = $("#"+FrmNm + " input[name='sId']");
 	oBbbSeq.val(fnNumChk(oBbbSeq.val()));
 
 	$("#"+FrmNm).submit();
 }
 
-// 글쓰기
+// writing
 function fnBbs_W( BbCode, BbsSeq ) {
 	$("#frmSearch input[name='sBbsSeq']").remove();
 	fnDnyamicInput( "#frmSearch", "sBbsSeq", BbsSeq );
 	$("#frmSearch").attr("action", "./Bbs_W.asp").submit();
 }
 
-// 보기
-function fnView_S( BbsSeq ) {
-	$("#frmSearch input[name='sBbsSeq']").remove();
-	top.location.href='./Bbs_V.asp?'+$("#frmSearch").serialize()+"&sBbsSeq="+BbsSeq;
+// View
+function fnView_S( current ) {
+	current = JSON.parse(current)[0];
+	$("#view_modal").modal('show');
+	$("#modal_title")[0].innerHTML = current.title;
+	$("#modal_content")[0].innerHTML = current.content;
+	$("#modal_creator")[0].innerHTML = current.creator;
+	$("#modal_view_count")[0].innerHTML = current.view_count;
+	$("#modal_created_at")[0].innerHTML = current.created_at;
+}
+
+function fnViewModalClose() {
+	$(".jquery-modal").removeClass("blocker");
 }

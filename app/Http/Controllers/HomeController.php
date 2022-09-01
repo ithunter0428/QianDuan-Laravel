@@ -53,8 +53,8 @@ class HomeController extends Controller
     {
         try {
             $user = new User();
-            $user->first_name = $request->get('sFirstName');
-            $user->last_name = $request->get('sLastName');
+            $user->name = $request->get('sFullName');
+            $user->user_id = $request->get('sUserName');
             $user->email = $request->get('sMemEmail');
             $user->password = Hash::make($request->get('sMemPw'));
             $user->save();

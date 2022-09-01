@@ -218,6 +218,9 @@ Route::group(['middleware' => ['verify_role:admin'], 'as' => 'admin.', 'prefix' 
         // MemGrade
         Route::group(['as' => 'mem_grade.', 'prefix' => 'mem_grade'], function () {
             Route::get('/', 'Admin\Environment\MemGradeController@index')->name('home');
+            Route::post('/', 'Admin\Environment\MemGradeController@create');
+            Route::put('/{row}', 'Admin\Environment\MemGradeController@update');
+            Route::delete('/{id}', 'Admin\Environment\MemGradeController@destroy');
         });
 
         // Center
