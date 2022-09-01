@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAnnoucementTable extends Migration
+class ServiceInquiryTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateAnnoucementTable extends Migration
      */
     public function up()
     {
-        Schema::create('tb_announcement', function (Blueprint $table) {
+        Schema::create('tb_service_inquiry', function (Blueprint $table) {
             $table->id();
-            $table->integer('self_id');
             $table->text('title');
-            $table->string('id_name');
+            $table->text('content');
+            $table->string('creator');
             $table->integer('view_count');
             $table->timestamps();
         });
@@ -30,6 +30,6 @@ class CreateAnnoucementTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('annoucement');
+        //
     }
 }
