@@ -6,13 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 
-class MemberCupon extends Model
+class MemberCoupon extends Model
 {
     use SoftDeletes;
     
     // Get the member
     public function member()
     {
-        return $this->hasOne(User::class, 'member_id', 'id');
+        return $this->hasOne(User::class, 'id', 'member_id');
     }
 }

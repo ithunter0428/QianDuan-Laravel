@@ -53,60 +53,52 @@
 								<th></th>
 							</tr>
 							<tr>
-								<td>
-									<select name="sPageSize" id="sPageSize">
-										<option value="10"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10</font></font></option>
-										<option value="15"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">15</font></font></option>
-										<option value="20" selected=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">20</font></font></option>
-										<option value="25"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">25</font></font></option>
-										<option value="30"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">30</font></font></option>
-										<option value="35"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">35</font></font></option>
-										<option value="40"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">40</font></font></option>
-										<option value="45"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">45</font></font></option>
-										<option value="50"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">50</font></font></option>
-
-									</select>
-								</td>
+							<td>
+                                    <select name="sPageSize" id="sPageSize">
+                                        @foreach ([10, 15, 20, 25, 30, 35, 40, 45, 50] as $i)
+                                        <option value="{{ $i }}" {{ $page_size == $i ? "selected" : '' }}><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $i }}</font></font></option>
+                                        @endforeach
+                                    </select>
+                                </td>
 								<!-- <td>
 									<input type="text" name="sBeginDt" id="sBeginDt" maxlength="10" class="iptBox1 dtPic hasDatepicker" readonly style="cursor:pointer;width:80px;" value=""><img src="./cop_files/dt_close.png" class="cursor DtCan" rel="sBeginDt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">~
 									</font></font><input type="text" name="sEndDt" id="sEndDt" maxlength="10" class="iptBox1 dtPic hasDatepicker" readonly style="cursor:pointer;width:80px;" value=""><img src="./cop_files/dt_close.png" class="cursor DtCan" rel="sEndDt">
 								</td> -->
 								<td>
-									<input type="text" name="BEGIN_DT" maxlength="10" class="iptBox1 dtPic" readonly style="cursor:pointer;width:80px;" value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">~
-									</font></font><input type="text" name="END_DT" maxlength="10" class="iptBox1 dtPic" readonly style="cursor:pointer;width:80px;" value="">
+									<input type="text" name="BEGIN_DT" maxlength="10" class="iptBox1 dtPic" readonly style="cursor:pointer;width:80px;" value="{{$BEGIN_DT}}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">~
+									</font></font><input type="text" name="END_DT" maxlength="10" class="iptBox1 dtPic" readonly style="cursor:pointer;width:80px;" value="{{$END_DT}}">
 								</td>
 								<td>
-									<select name="sUsePsbYn">
+									<select name="sUsePsbYn" value="{{$sUsePsbYn}}">
 										<option value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">= 选择</font></font></option>
-										<option value="Y" selected=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以使用</font></font></option>
-										<option value="N"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不能使用</font></font></option>
+										<option value="Y" {{ $sUsePsbYn == "Y" ? "selected" : "" }}><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以使用</font></font></option>
+										<option value="N" {{ $sUsePsbYn == "N" ? "selected" : "" }}><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不能使用</font></font></option>
 									</select>
 								</td>
 								<td>
-									<select name="sIssueDvsCd">
+									<select name="sIssueDvsCd" value="{{ $sIssueDvsCd }}">
 										<option value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">= 选择</font></font></option>
+											<option value="1" {{ $sIssueDvsCd == "1" ? "selected" : "" }}><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会员注册活动</font></font></option>
 
-											<option value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会员注册活动</font></font></option>
+											<option value="3" {{ $sIssueDvsCd == "3" ? "selected" : "" }}><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">由经理签发</font></font></option>
 
-											<option value="3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">由经理签发</font></font></option>
-
-											<option value="4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发放会员优惠券</font></font></option>
-
-									</select>
-								</td>
-								<td>
-									<select name="sChargeDetCd">
-										<option value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">= 选择</font></font></option>
-
-											<option value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运输费</font></font></option>
+											<option value="4" {{ $sIssueDvsCd == "4" ? "selected" : "" }}><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发放会员优惠券</font></font></option>
 
 									</select>
 								</td>
 								<td>
-									<input type="text" name="sMemNm" id="sMemNm" maxlength="40" class="iptBox1 EnterKey" style="width:80px;" value="">
+									<select name="sChargeDetCd" value="{{ $sChargeDetCd }}">
+										<option value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">= 选择</font></font></option>
+
+											<option value="1" {{ $sChargeDetCd == "1" ? "selected" : "" }}><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运输费</font></font></option>
+
+									</select>
 								</td>
 								<td>
-									<input type="text" name="sMemId" id="sMemId" maxlength="100" class="iptBox1 EnterKey" style="width:120px;" value="">
+									<input type="text" name="sMemNm" id="sMemNm" maxlength="40" class="iptBox1 EnterKey" style="width:80px;" value="{{ $sMemNm }}">
+								</td>
+								<td>
+									<input type="text" name="sMemId" id="sMemId" maxlength="100" class="iptBox1 EnterKey" style="width:120px;" value="{{ $sMemId }}">
 								</td>
 								<td>
 									<input type="text" name="sPostNo" id="sPostNo" maxlength="20" class="iptBox1 EnterKey" style="width:80px;" value="">
@@ -159,177 +151,79 @@
 								</tr>
 
 
+								@foreach ($coupons as $coupon)
 								<tr>
 									<td class="alLeft padL1">
 
 											<label class=""><input type="checkbox" name="ckCOUPON_SEQ" value="211">
 
-										<span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">211</font></font></span>
+										<span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{$loop->index + 1}}</font></font></span>
 									</label></td>
-									<td class=""><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运费</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（由管理发布）</font></font></td>
-									<td class="alRight"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">￦50,000</font></font></span></td>
-									<td class="alCenter"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-13 ~ 2022-06-05</font></font></span></td>
+									<?php $coupon_types = [ '1' => '运输费'] ?>
+									<?php $issues = [ '1' => '会员注册活动', '3' => '由经理签发', '4' => '发放会员优惠券'] ?>
+
+									<td class=""><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $coupon_types[$coupon->coupon_type] }}</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（{{$issues[$coupon->issue_category]}}）</font></font></td>
+									<td class="alRight"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $coupon->currency_unit}}{{ $coupon->coupon_amount}}</font></font></span></td>
+									<td class="alCenter"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+									{{ Carbon\Carbon::parse($coupon['effective_st_date'])->format('yy-m-d') }}	~ {{ Carbon\Carbon::parse($coupon['effective_ed_date'])->format('yy-m-d') }}</font>
+								
+									</font></font></span></td>
 									<td class="">
-										<a href="javascript:" memcode="200" class="tipMem" data-hasqtip="0"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ah-reum Han (seakgal)</font></font></span></a>
+										<a href="javascript:" memcode="200" class="tipMem" data-hasqtip="0"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $coupon->member->name}}</font></font></span></a>
 									</td>
-									<td class="alCenter"><span class=""><span class="bold clrBlue1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以使用</font></font></span></span></td>
+									<td class="alCenter"><span class="">
+										@if ($coupon->status == 'Y')
+											<span class="bold clrBlue1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以使用</font></font></span>
+										@else
+											<span class="bold clrRed1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不能使用</font></font></span>
+										@endif
+									</span></td>
 									<td class="">
-										<span class="grey1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-13 22:20</font></font></span>
+										<span class="grey1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ Carbon\Carbon::parse($coupon['created_at'])->format('yy-m-d h:m') }}</font></font></span>
 
 									</td>
 								</tr>
+								@endforeach
 
 
-
-								<tr>
-									<td class="alLeft padL1">
-
-											<label class=""><input type="checkbox" name="ckCOUPON_SEQ" value="210">
-
-										<span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">210</font></font></span>
-									</label></td>
-									<td class=""><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运费</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（由管理发布）</font></font></td>
-									<td class="alRight"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">￦50,000</font></font></span></td>
-									<td class="alCenter"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-13 ~ 2022-06-05</font></font></span></td>
-									<td class="">
-										<a href="javascript:" memcode="200" class="tipMem" data-hasqtip="1"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ah-reum Han (seakgal)</font></font></span></a>
-									</td>
-									<td class="alCenter"><span class=""><span class="bold clrBlue1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以使用</font></font></span></span></td>
-									<td class="">
-										<span class="grey1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-13 22:20</font></font></span>
-
-									</td>
-								</tr>
-
-
-
-								<tr>
-									<td class="alLeft padL1">
-
-											<label class=""><input type="checkbox" name="ckCOUPON_SEQ" value="209">
-
-										<span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">209</font></font></span>
-									</label></td>
-									<td class=""><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运费</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（由管理发布）</font></font></td>
-									<td class="alRight"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">￦50,000</font></font></span></td>
-									<td class="alCenter"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-13 ~ 2022-06-05</font></font></span></td>
-									<td class="">
-										<a href="javascript:" memcode="200" class="tipMem" data-hasqtip="2"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ah-reum Han (seakgal)</font></font></span></a>
-									</td>
-									<td class="alCenter"><span class=""><span class="bold clrBlue1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以使用</font></font></span></span></td>
-									<td class="">
-										<span class="grey1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-13 22:20</font></font></span>
-
-									</td>
-								</tr>
-
-
-
-								<tr>
-									<td class="alLeft padL1">
-
-											<label class=""><input type="checkbox" name="ckCOUPON_SEQ" value="208">
-
-										<span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">208</font></font></span>
-									</label></td>
-									<td class=""><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运费</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（由管理发布）</font></font></td>
-									<td class="alRight"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">￦50,000</font></font></span></td>
-									<td class="alCenter"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-13 ~ 2022-06-05</font></font></span></td>
-									<td class="">
-										<a href="javascript:" memcode="200" class="tipMem" data-hasqtip="3"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ah-reum Han (seakgal)</font></font></span></a>
-									</td>
-									<td class="alCenter"><span class=""><span class="bold clrBlue1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以使用</font></font></span></span></td>
-									<td class="">
-										<span class="grey1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-13 22:20</font></font></span>
-
-									</td>
-								</tr>
-
-
-
-								<tr>
-									<td class="alLeft padL1">
-
-											<label class=""><input type="checkbox" name="ckCOUPON_SEQ" value="207">
-
-										<span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">207</font></font></span>
-									</label></td>
-									<td class=""><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运费</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（由管理发布）</font></font></td>
-									<td class="alRight"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">￦50,000</font></font></span></td>
-									<td class="alCenter"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-13 ~ 2022-06-05</font></font></span></td>
-									<td class="">
-										<a href="javascript:" memcode="200" class="tipMem" data-hasqtip="4"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ah-reum Han (seakgal)</font></font></span></a>
-									</td>
-									<td class="alCenter"><span class=""><span class="bold clrBlue1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以使用</font></font></span></span></td>
-									<td class="">
-										<span class="grey1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-13 22:20</font></font></span>
-
-									</td>
-								</tr>
-
-
-
-								<tr>
-									<td class="alLeft padL1">
-
-											<label class=""><input type="checkbox" name="ckCOUPON_SEQ" value="206">
-
-										<span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">206</font></font></span>
-									</label></td>
-									<td class=""><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运费</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（由管理发布）</font></font></td>
-									<td class="alRight"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">￦50,000</font></font></span></td>
-									<td class="alCenter"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-13 ~ 2022-06-05</font></font></span></td>
-									<td class="">
-										<a href="javascript:" memcode="200" class="tipMem" data-hasqtip="5"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ah-reum Han (seakgal)</font></font></span></a>
-									</td>
-									<td class="alCenter"><span class=""><span class="bold clrBlue1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以使用</font></font></span></span></td>
-									<td class="">
-										<span class="grey1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-13 22:20</font></font></span>
-
-									</td>
-								</tr>
-
-
-
-								<tr>
-									<td class="alLeft padL1">
-
-											<label class=""><input type="checkbox" name="ckCOUPON_SEQ" value="205">
-
-										<span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">205</font></font></span>
-									</label></td>
-									<td class=""><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">运费</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（由管理发布）</font></font></td>
-									<td class="alRight"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">￦50,000</font></font></span></td>
-									<td class="alCenter"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-13 ~ 2022-06-05</font></font></span></td>
-									<td class="">
-										<a href="javascript:" memcode="200" class="tipMem" data-hasqtip="6"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ah-reum Han (seakgal)</font></font></span></a>
-									</td>
-									<td class="alCenter"><span class=""><span class="bold clrBlue1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以使用</font></font></span></span></td>
-									<td class="">
-										<span class="grey1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-13 22:20</font></font></span>
-
-									</td>
-								</tr>
-
-
+																							
 								</tbody>
 							</table>
 						</form>
 					</div>
 
 					<div class="pagDv">
-							<div class="Status-change">
-								<span class="whRedBtn ty2"><button type="button" class="txt" onClick="fnCouponDel_M();"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button></span>
-							</div>
-
-							<div class="paging">	 <span class="num"><a href="javascript:" class="ArrowOff" title="没有前 10 页"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&lt;</font></font></a><a href="javascript:" class="on" onClick="fnSearch(&#39;frmSearch&#39;, 1);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一</font></font></a> <a href="javascript:" class="ArrowOff" title="没有下 10 页"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&gt;</font></font></a>	</span></div>
-
-							<div class="CntRt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-								总数</font></font><span class="tt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> / 页</font></font><span class="go"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> / 总数</font></font><span class="tt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></span>
-							</div>
-
-
-					</div>
+				<div class="Status-change">
+                    <select name="GRADE_NO" class="vm">
+                        <option value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">= 选择年级</font></font></option>
+                        <option value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1级</font></font></option>
+                        <option value="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2级</font></font></option>
+                        <option value="3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3级</font></font></option>
+                        <option value="4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4级</font></font></option>
+                        <option value="5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5级</font></font></option>
+                    </select>
+                    <span class="whGraBtn ty2 vm">
+                        <button type="button" class="txt" onClick="fnGradeChg_M();"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">年级变化</font></font></button>
+                    </span>
+				</div>
+                <div class="paging">
+                    <span class="num">
+                        <a href="javascript:" class="ArrowOff" onClick="fnSearch('frmSearch', {{ $page_number - 1 }});" title="没有前"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&lt;</font></font></a>
+                        @for ($i = 1; $i <= $page_count; $i ++)
+                        <a href="javascript:" class="{{ $i == $page_number ? 'on' : '' }}" onClick="fnSearch('frmSearch', {{ $i }});"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $i }}</font></font></a>
+                        @endfor
+                        <a href="javascript:" class="ArrowOff" onClick="fnSearch('frmSearch', {{ $page_number + 1 }});" title="没有下"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&gt;</font></font></a>
+                    </span>
+                </div>
+                <div class="CntRt">
+                    <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">总数</font></font>
+                    <span class="tt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $total_count }}</font></font></span>
+                    <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> / 页</font></font>
+                    <span class="go"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $page_number }}</font></font></span>
+                    <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> / 总数</font></font>
+                    <span class="tt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $page_count }}</font></font></span>
+                </div>
+			</div>
 
 				</div>
 
@@ -344,7 +238,9 @@
 			<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font><a href="#" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> </font></font></a></h3>
 		</div>
 	</div>
-<div id="distribute_coupon_modal" class="modal fade" style="max-width: 800px; height: 600px">
+
+<!-- Modal for Distribute Coupons to Members -->
+<div id="distribute_coupon_modal" class="modal fade" style="max-width: 800px;">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
@@ -358,7 +254,7 @@
 					<!-- Radio Button for selecting coupon type -->
 					<div style="display: flex; padding-top: 15px">
 						<div>
-							<input type="radio" value="all" name="coupon_radio">
+							<input type="radio" value="all" name="coupon_radio" checked>
 							<label for="all">To All User</label>
 						</div>
 						<div style="margin-left: 20px">
@@ -366,7 +262,7 @@
 							<label for="one">Only One User</label>
 						</div>
 					</div>
-					<table class="order_write order_table_top" style="margin-bottom:20px">
+					<table class="order_write order_table_top" style="margin-bottom:20px;">
 						<colgroup>
 							<col width="15%">
 							<col width="35%">
@@ -383,7 +279,7 @@
 								</td>
 								<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">日期</font></font></th>
 								<td>
-									<input type="text" name="BEGIN_DT" maxlength="10" class="iptBox1 dtPic" readonly style="cursor:pointer;width:80px;" value="">
+									<input type="text" name="END_DT" maxlength="10" class="iptBox1 dtPic" readonly style="cursor:pointer;width:80px;" value="">
 								</td>
 							</tr>
 							<tr>
@@ -410,6 +306,22 @@
 								</td>
 							</tr>
 							<tr>
+								<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单位</font></font></th>
+								<td>
+									<select name="sCrUnit">
+										<option value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">= 选择</font></font></option>
+
+											<option value="￦"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">￦</font></font></option>
+
+									</select>
+								</td>
+								<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">金额</font></font></th>
+								<td>
+									<input type="text" name="sMny" id="sMny" maxlength="40" class="iptBox1 EnterKey" style="width:80px;" value="">
+
+								</td>
+							</tr>
+							<tr>
 								<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">优惠券类型</font></font></th>
 								<td>
 									<select name="sChargeDetCd">
@@ -419,78 +331,76 @@
 
 									</select>
 								</td>
-								<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">评论权限</font></font></th>
-								<td>
-									<input type="text" name="sMemNm" id="sMemNm" maxlength="40" class="iptBox1 EnterKey" style="width:80px;" value="">
-
-								</td>
+					
 							</tr>
 						</tbody>
 					</table>
-					<div>
-						<div>
-							<label for="">User Name</label>
-							<input type="text" id="sMemNm" maxlength="40" class="iptBox1 EnterKey" style="width:80px;" value="">
-							<span class="whGraBtn_bg ty2"><button type="button" class="txt" onClick="fnSearch(&#39;frmSearch&#39;, &#39;1&#39;);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索</font></font></button></span> &nbsp;
-
+					<div id="sMemberPan" style="display:none">
+						<div class="search-board">
+							<table cellspacing="1">
+								<tbody>
+									<tr>
+										<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会员等级</font></font></th>
+										<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ID</font></font></th>
+										<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会员名称</font></font></th>
+										<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">邮箱号码</font></font></th>
+										<th></th>
+									</tr>
+									<tr>
+							
+										<td>
+											<select name="sGradeNo" id="tGradeNo">
+												<option value="0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">= 选择</font></font></option>
+												@foreach ([1, 2, 3, 4, 5] as $i)
+												<option value="{{ $i }}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $i }}级</font></font></option>
+												@endforeach
+											</select>
+										</td>
+										<td>
+											<input type="text" name="sMemId" id="tMemId" maxlength="100" class="iptBox1 EnterKey" style="width:100px;" value="">
+										</td>
+										<td>
+											<input type="text" name="sMemNm" id="tMemNm" maxlength="40" class="iptBox1 EnterKey" style="width:80px;" value="">
+										</td>
+										<td>
+											<input type="text" name="sPostNo" id="tPostNo" maxlength="20" class="iptBox1 EnterKey" style="width:80px;" value="">
+										</td>
+										<td>
+											<div class="">
+												<span class="whGraBtn_bg ty2"><button type="button" class="txt" onClick="fnMemberSearch()"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索</font></font></button></span>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 						<!-- Member Table -->
-						<table border="1">
-							<colgroup>
-								<col width="6%">
-								<col width="11%">
-								<col width="15%">
-								<col width="11%">
-								<col width="8%">
-								<col width="7%">
-								<col width="9%">
-								<col width="9%">
-								<col width="*">
-							</colgroup>
-							<tbody>
-								<tr>
-									<th><label><input type="checkbox" name="ckMEM_CODE_ALL" value="Y" onClick="fnCkBoxAllSel('frmList', 'ckMEM_CODE_ALL', 'ckMEM_CODE');"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会员代码</font></font></label></th>
-									<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会员名称</font></font></th>
-									<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ID</font></font></th>
-									<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">邮箱号码</font></font></th>
-									<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">手机号码</font></font></th>
-									<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">预付款 (￦)</font></font></th>
-									<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上次访问日期</font></font></th>
-									<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注册日期</font></font></th>
-									<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-</font></font></th>
-								</tr>
-
-								@foreach ($users as $user)
-								<tr>
-									<td class="alCenter">
-										<label class=""><input type="checkbox" name="ckMEM_CODE" value="{{ $user->id }}">
-											<span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $user->id }}</font></font></span>
-										</label>
-									</td>
-									<td class="alCenter">
-										<font style="vertical-align: inherit;">[Level {{ $user->grade }}]</font>
-										<a onclick="fnView({{ $user->id }})" memcode="{{ $user->id }}" class="tipMem" data-hasqtip="3">
-											<span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> {{ $user->name }} </font></font></span>
-										</a>
-									</td>
-									<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $user->user_id }}</font></font></span></td>
-									<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $user->mailbox_number }}</font></font></span></td>
-									<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $user->cellphone_number }}</font></font></span></td>
-									<td class="alCenter"><span class="bold red1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $user->advance_payment }}</font></font></span></td>
-									<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $user->last_visited_at }}</font></font></span></td>
-									<td class="alCenter"><span class="grey1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $user->created_at }}</font></font></span></td>
-									<td class="listBtn">
-										<span class="whGraBtn ty2">
-											<button type="button" class="txt" onClick="fnPopWinCT(&#39;./Mem_W.asp?sKind=M&amp;sMemCode=341&#39;, &#39;Mem_W&#39;, 1000, 700);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">修改</font></font></button>
-										</span>
-										<span class="whRedBtn ty2">
-											<button type="button" class="txt" onClick="fnOut_M(&#39;341&#39;);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注销</font></font></button>
-										</span>
-									</td>
-								</tr>
-								@endforeach
-							</tbody>
-						</table>
+						<div style="height: 350px; overflow: auto">
+							<table border="1" id="member_table">
+								<colgroup>
+									<col width="6%">
+									<col width="11%">
+									<col width="15%">
+									<col width="11%">
+									<col width="8%">
+									<col width="7%">
+									<col width="9%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th><label><input type="checkbox" name="ckMEM_CODE_ALL" value="Y" onClick="fnCkBoxAllSel('frmList', 'ckMEM_CODE_ALL', 'ckMEM_CODE');"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会员代码</font></font></label></th>
+										<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会员名称</font></font></th>
+										<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ID</font></font></th>
+										<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">邮箱号码</font></font></th>
+										<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">手机号码</font></font></th>
+										<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">预付款 (￦)</font></font></th>
+										<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上次访问日期</font></font></th>
+									</tr>	
+								</thead>
+								<tbody>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</form>
 			</div>

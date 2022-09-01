@@ -91,7 +91,10 @@ Route::get('reviews/hotel/{hotel}/{user}', 'ReviewController@getHotelReviews');
 
 // Coupon API Routes
 Route::group(['prefix' => 'coupon'], function(){
-    Route::group(['prefix' => 'member_cupon'], function() {
-        Route::put('/{member}', 'Admin\Coupon\ListController@addMemberCoupon');
+    Route::group(['prefix' => 'member_coupon'], function() {
+        // Route::put('/{member}', 'Admin\Coupon\ListController@addMemberCoupon');
+        Route::post('/members', 'Admin\Coupon\ListController@getMembers');
+        Route::put('/distribute_to_all', 'Admin\Coupon\ListController@distributeToAll');
+        Route::put('/distribute_to_one', 'Admin\Coupon\ListController@distributeToOne');
     });
 });

@@ -1,3 +1,8 @@
+var users = [];
+var table_users = [];
+var mCouponType =  'all' // If value is 'all' coupon is distributed for all member, and if value is 'one' coupon is distributed for only on member
+var selected_member = -1;
+
 $(document).ready(function() {
 
 	// 달력 Init
@@ -36,24 +41,162 @@ $(document).ready(function() {
 		}
 	});
 
-	// Load List
-
 	// 
 	$('[name=coupon_radio]').change(function() {
 		var value = $(this).val()
 		if (value == 'all') {
-
+			$('#sMemberPan').hide();
 		}
 		else if (value === 'one') {
-			
+			$('#sMemberPan').show();
 		}
+		mCouponType = value;
 	})
 
+	// Load Members
+	fnGetMemberList()
 });
 
 // Load List
-function fnGetList () {
-	$.post()
+function fnGetMemberList () {
+	$.post('/api/coupon/member_coupon/members', {}, function(resp){
+		if (resp.success == true) {
+			users = resp.data;
+			table_users = users;
+			fnDrawMemberTable();
+		}
+	})
+}
+
+// Draw Member Table
+function fnDrawMemberTable () {
+	$('#member_table tbody').html('')
+	table_users.map(user => {
+		$('#member_table tbody').append(`
+		<tr uid=${user.id}>
+			<td class="alCenter">
+				<label class=""><input type="checkbox" name="ckMEM_CODE" value="${user.id}">
+					<span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">${user.id}</font></font></span>
+				</label>
+			</td>
+			<td class="alCenter">
+				<font style="vertical-align: inherit;">[Level ${user.grade}]</font>
+				<a onclick="fnView(${user.id})" memcode="${user.id}" class="tipMem" data-hasqtip="3">
+					<span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ${user.name} </font></font></span>
+				</a>
+			</td>
+			<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">${user.user_id}</font></font></span></td>
+			<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">${user.mailbox_number }</font></font></span></td>
+			<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">${ user.cellphone_number }</font></font></span></td>
+			<td class="alCenter"><span class="bold red1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">${ user.advance_payment }</font></font></span></td>
+			<td class="alCenter"><span class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">${ user.last_visited_at }</font></font></span></td>
+		</tr>`)
+	})	
+	$('#member_table tbody').find('input[type=checkbox]').click(function(){
+		if ($(this).is(':checked')) {
+			var selectedCount = $('#member_table').find('input[type=checkbox]:checked').length;
+			if (selectedCount > 1) {
+				$(this).prop('checked', false);
+			}
+			else {
+				selected_member = $(this).closest('tr').attr('uid')
+			}
+		} 
+	})
+} 
+
+// 
+function fnMemberSearch() {
+	var memId = $('#tMemId').val();
+	var memNm = $('#tMemNm').val();
+	var grade = $('#tGradeNo').val()
+	var postNo = $('#tPostNo').val();
+	table_users = users.filter(user => user.name.includes(memNm) && user.user_id.includes(memId) && (grade == 0 || user.grade == grade))
+	fnDrawMemberTable()
+}
+
+// 
+function fnSave()
+{
+	if (fnVaidateForm() == false)	return;
+	var params = $('#frmSmsCont').serialize();
+	
+	if (mCouponType == 'all') {
+		$.ajax({ url: "/api/coupon/member_coupon/distribute_to_all" ,
+		method: 'PUT',
+		data : params,
+		dataType : 'json',
+		success: function(resp) {
+			if (resp.success == true) {
+				alert("success")
+			}
+		},
+		error: function(e) {
+			alert( e.responseText );
+		}
+		});
+	}
+	else if (mCouponType == 'one') {
+		console.log(params + `&member_id=${selected_member}`)
+		$.ajax({ url: "/api/coupon/member_coupon/distribute_to_one" ,
+		method: 'PUT',
+		data : params + `&member_id=${selected_member}`,
+		dataType : 'json',
+		success: function(resp) {
+			if (resp.success == true) {
+				alert("success")
+			}
+		},
+		error: function(e) {
+			alert( e.responseText );
+		}
+		});
+	}
+}
+
+function fnVaidateForm() {
+	var $form = $('#frmSmsCont')
+	// 발급구분
+	oField = $("select[name='sIssueDvsCd']", $form);
+	if ( !fnFormChk( "select", oField ) ) {
+		alert('발급구분을 선택하십시오.'); oField.focus();
+		return false;
+	}
+	// 쿠폰종류
+	oField = $("select[name='sChargeDetCd']", $form);
+	if ( !fnFormChk( "select", oField ) ) {
+		alert('쿠폰종류를 선택하십시오.'); oField.focus();
+		return false;
+	}
+	// 금액 화폐단위
+	oField = $("select[name='sCrUnit']", $form);
+	if ( !fnFormChk( "select", oField ) ) {
+		alert('금액 화폐단위를 선택하십시오.'); oField.focus();
+		return false;
+	}
+	// 금액
+	oField = $("input[name='sMny']", $form);
+	if ( !fnFormChk( "input", oField ) || Number(oField.val()) <= 0 ) {
+		alert('금액을 입력하십시오.'); oField.focus();
+		return false;
+	}
+	// 시작일자
+	oField = $("input[name='BEGIN_DT']", $form);
+	if ( !fnFormChk( "input", oField ) ) {
+		alert('시작일자를 입력하십시오.'); oField.focus();
+		return false;
+	}
+	// 종료일자
+	oField = $("input[name='END_DT']", $form);
+	if ( !fnFormChk( "input", oField ) ) {
+		alert('종료일자를 입력하십시오.'); oField.focus();
+		return false;
+	}
+	if (mCouponType == 'one' && $('#member_table').find('input[type=checkbox]:checked').length != 1) {
+		alert('Plz Select Member');
+		return;
+	}
+	return true;
 }
 
 // Enter 검색

@@ -1,7 +1,6 @@
 var gFrmNm = '#frmReg';
 var gSubmit = false;
 
-
 // Focus
 $(document).on("focus", "input", function(event) {
 	$(this).select();

@@ -25,6 +25,6 @@ class EventController extends Controller
     public function setStatus()
     {
         $params = Input::get('params');
-        if (EventCoupon::find($params['id'])->update(['status' => $params['status']]))
+        // if (EventCoupon::find($params['id'])->update(['status' => $params['status']]))
     }
 }
