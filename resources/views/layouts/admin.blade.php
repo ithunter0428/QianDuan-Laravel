@@ -6,6 +6,8 @@
 	<meta name="robots" content="noindex,nofollow">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
+    @csrf
 
     <link rel="stylesheet" type="text/css" href="{{ asset('/admin_files/layout/AdmReset.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('/admin_files/layout/AdmCommon.css') }}">
@@ -13,7 +15,8 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('/admin_files/layout/jquery-ui.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/admin_files/layout/translateelement.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('/admin_files/layout/jquery.qtip.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('/plugin/DataTables/datatables.min.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ asset('/plugin/DataTables/datatables.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/plugin/jQueryModal/jquery.modal.min.css') }}" />
     @yield('globalStyles')
 
     <style>
@@ -25,6 +28,7 @@
 	<script type="text/javascript" src="{{ asset('/admin_files/layout/Common.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('/admin_files/layout/jquery.qtip.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('/plugin/DataTables/datatables.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/plugin/jQueryModal/jquery.modal.min.js') }}"></script>
     @yield('globalScripts')
 
     <script>
@@ -223,10 +227,10 @@
                     <li class="{{ strrpos(Request::url(), "/admin/statistics") ? 'select' : '' }}">
                         <a href="{{ route('admin.statistics.home') }}" target="_self"><i class="icon-feather-pie-chart" aria-hidden="true"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">统计管理</font></font></a>
                         <ul class="deth2">
-                            <li class="{{ strrpos(Request::url(), "/admin/statistics/order") ? 'select2' : ''}}"><a href="{{ route('admin.statistics.order.home') }}" target="_self">订单统计</a></li>
-                            <li class="{{ strrpos(Request::url(), "/admin/statistics/member") ? 'select2' : ''}}"><a href="{{ route('admin.statistics.member.home') }}" target="_self">按按会员统计</a></li>
-                            <li class="{{ strrpos(Request::url(), "/admin/statistics/employee") ? 'select2' : ''}}"><a href="{{ route('admin.statistics.employee.home') }}" target="_self">操作员统计</a></li>
-                            <li class="{{ strrpos(Request::url(), "/admin/statistics/log") ? 'select2' : ''}}"><a href="{{ route('admin.statistics.log.home') }}" target="_self">操作员日志</a></li>
+                            <li class="{{ strrpos(Request::url(), "/admin/statistics/order") ? 'select2' : '' }}"><a href="{{ route('admin.statistics.order.home') }}" target="_self">订单统计</a></li>
+                            <li class="{{ strrpos(Request::url(), "/admin/statistics/member") ? 'select2' : '' }}"><a href="{{ route('admin.statistics.member.home') }}" target="_self">按按会员统计</a></li>
+                            <li class="{{ strrpos(Request::url(), "/admin/statistics/employee") ? 'select2' : '' }}"><a href="{{ route('admin.statistics.employee.home') }}" target="_self">操作员统计</a></li>
+                            <li class="{{ strrpos(Request::url(), "/admin/statistics/log") ? 'select2' : '' }}"><a href="{{ route('admin.statistics.log.home') }}" target="_self">操作员日志</a></li>
                         </ul>
                     </li>
                 </ul>

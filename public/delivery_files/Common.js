@@ -741,31 +741,31 @@ function fnJusoGetAddr(sFormNm, sTxtId){
 		return ;
 	}
 
-	$.ajax({
-		 url :"https://www.juso.go.kr/addrlink/addrLinkApiJsonp.do"  //인터넷망
-		,type:"post"
-		,data:$("#"+sFormNm).serialize()
-		,dataType:"jsonp"
-		,crossDomain:true
-		,success:function(jsonStr){
-			console.log(typeof jsonStr);
-			var stringJson = JSON.stringify(jsonStr);
-                    console.log(stringJson);
-			$("#"+sTxtId).html("");
-			var errCode = jsonStr.results.common.errorCode;
-			var errDesc = jsonStr.results.common.errorMessage;
-			if(errCode != "0"){
-				alert(errCode+"="+errDesc);
-			}else{
-				if(jsonStr != null){
-					fnMakeJusoListJson(jsonStr, sTxtId);
-				}
-			}
-		}
-	    ,error: function(xhr,status, error){
-	    	alert("에러발생");
-	    }
-	});
+	// $.ajax({
+	// 	 url :"https://www.juso.go.kr/addrlink/addrLinkApiJsonp.do"  //인터넷망
+	// 	,type:"post"
+	// 	,data:$("#"+sFormNm).serialize()
+	// 	,dataType:"jsonp"
+	// 	,crossDomain:true
+	// 	,success:function(jsonStr){
+	// 		console.log(typeof jsonStr);
+	// 		var stringJson = JSON.stringify(jsonStr);
+    //                 console.log(stringJson);
+	// 		$("#"+sTxtId).html("");
+	// 		var errCode = jsonStr.results.common.errorCode;
+	// 		var errDesc = jsonStr.results.common.errorMessage;
+	// 		if(errCode != "0"){
+	// 			alert(errCode+"="+errDesc);
+	// 		}else{
+	// 			if(jsonStr != null){
+	// 				fnMakeJusoListJson(jsonStr, sTxtId);
+	// 			}
+	// 		}
+	// 	}
+	//     ,error: function(xhr,status, error){
+	//     	alert("에러발생");
+	//     }
+	// });
 }
 
 // 주소 리스트 생성
