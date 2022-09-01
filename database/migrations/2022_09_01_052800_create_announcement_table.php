@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAnnoucementTable extends Migration
+class CreateAnnouncementTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,9 +15,9 @@ class CreateAnnoucementTable extends Migration
     {
         Schema::create('tb_announcement', function (Blueprint $table) {
             $table->id();
-            $table->integer('self_id');
             $table->text('title');
-            $table->string('id_name');
+            $table->text('content');
+            $table->string('creator');
             $table->integer('view_count');
             $table->timestamps();
         });
@@ -30,6 +30,6 @@ class CreateAnnoucementTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('annoucement');
+        Schema::dropIfExists('users_announcement');
     }
 }
