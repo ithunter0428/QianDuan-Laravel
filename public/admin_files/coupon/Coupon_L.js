@@ -128,7 +128,7 @@ function fnSave()
 		dataType : 'json',
 		success: function(resp) {
 			if (resp.success == true) {
-				alert("success")
+				alert("分发成功。")
 			}
 		},
 		error: function(e) {
@@ -144,7 +144,7 @@ function fnSave()
 		dataType : 'json',
 		success: function(resp) {
 			if (resp.success == true) {
-				alert("success")
+				alert("分发成功。")
 			}
 		},
 		error: function(e) {
