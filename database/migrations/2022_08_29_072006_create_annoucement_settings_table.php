@@ -13,7 +13,7 @@ class CreateAnnoucementSettingsTable extends Migration
      */
     public function up()
     {
-        Schema::create('tb_announcement_settings', function (Blueprint $table) {
+        Schema::create('announcement_settings', function (Blueprint $table) {
             $table->id();
             $table->string('board_name');
             $table->string('type');

@@ -24,16 +24,16 @@
                                         <tr>
                                             <td>
                                                 <label>
-                                                    <input type="radio" name="radiobutton" value="radiobutton" />
+                                                    <input type="radio" name="logistics_center" value="威海" />
                                                 </label>
                                                 威海
                                             </td>
                                             <td>
-                                                <input type="radio" name="radiobutton" value="radiobutton" />
+                                                <input type="radio" name="logistics_center" value="青岛" />
                                                 青岛
                                             </td>
                                             <td>
-                                                <input type="radio" name="radiobutton" value="radiobutton" />
+                                                <input type="radio" name="logistics_center" value="广州" />
                                                 广州
                                             </td>
                                         </tr>

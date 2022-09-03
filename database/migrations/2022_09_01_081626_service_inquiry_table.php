@@ -13,7 +13,7 @@ class ServiceInquiryTable extends Migration
      */
     public function up()
     {
-        Schema::create('tb_service_inquiry', function (Blueprint $table) {
+        Schema::create('service_inquiry', function (Blueprint $table) {
             $table->id();
             $table->text('title');
             $table->text('content');

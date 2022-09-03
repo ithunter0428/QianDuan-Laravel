@@ -13,7 +13,7 @@ class CommentTable extends Migration
      */
     public function up()
     {
-        Schema::create('tb_comment', function (Blueprint $table) {
+        Schema::create('comment', function (Blueprint $table) {
             $table->id();
             $table->text('title');
             $table->text('content');

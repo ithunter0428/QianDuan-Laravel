@@ -13,7 +13,7 @@ class EventTable extends Migration
      */
     public function up()
     {
-        Schema::create('tb_event', function (Blueprint $table) {
+        Schema::create('event', function (Blueprint $table) {
             $table->id();
             $table->text('title');
             $table->text('content');

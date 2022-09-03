@@ -13,7 +13,7 @@ class CreateConsultationTable extends Migration
      */
     public function up()
     {
-        Schema::create('tb_consultation', function (Blueprint $table) {
+        Schema::create('consultation', function (Blueprint $table) {
             $table->id();
             $table->text('title');
             $table->text('content');

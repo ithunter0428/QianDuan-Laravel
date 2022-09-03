@@ -13,7 +13,7 @@ class CreateAnnouncementTable extends Migration
      */
     public function up()
     {
-        Schema::create('tb_announcement', function (Blueprint $table) {
+        Schema::create('announcement', function (Blueprint $table) {
             $table->id();
             $table->text('title');
             $table->text('content');

@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class ServiceInquire extends Model
 {
-    protected $table = 'tb_service_inquiry';
+    protected $table = 'service_inquiry';
 }
