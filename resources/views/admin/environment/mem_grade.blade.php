@@ -162,7 +162,7 @@
 <div id="edit_modal" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
-			<div class="modal-header">
+			<div class="modal-header" id='edit_modal_header'>
 				会员等级设置
 			</div>
             <div class="modal-body">

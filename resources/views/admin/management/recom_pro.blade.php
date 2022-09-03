@@ -38,9 +38,9 @@
 				<tbody>
 				<tr>
 
-						<td class="" style="width:120px;"><a href="http://ds2.areumsoft.co.kr/Admin/Homepage/RecomPro_L.asp?sRecomDvsCd=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MD 选择</font></font></a></td>
+						<td class="" style="width:120px;"><a href="http://ds2.areumsoft.co/Admin/Homepage/RecomPro_L.asp?sRecomDvsCd=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MD 选择</font></font></a></td>
 
-						<td class="on" style="width:120px;"><a href="http://ds2.areumsoft.co.kr/Admin/Homepage/RecomPro_L.asp?sRecomDvsCd=2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">热卖</font></font></a></td>
+						<td class="on" style="width:120px;"><a href="http://ds2.areumsoft.co/Admin/Homepage/RecomPro_L.asp?sRecomDvsCd=2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">热卖</font></font></a></td>
 
 				</tr>
 				</tbody>

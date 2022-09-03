@@ -28,6 +28,7 @@ function fnEdit( editRow ) {
         editRow = JSON.parse(editRow)[0];
         editingRow = editRow;
         $("#edit_modal").modal('show');
+        $('#edit_modal_header').html('会员等级设置')
         $("#modal_grade").val(editRow.grade);
         $("#modal_name").val(editRow.name);
         $("#modal_send_amount_from").val(editRow.send_amount_from);
@@ -39,6 +40,7 @@ function fnEdit( editRow ) {
         $("#modal_status").val(editRow.status);
     }
     else {
+        $('#edit_modal_header').html('会员等级注册')
         $("#edit_modal").modal('show');
         $("#modal_grade").val('');
         $("#modal_name").val('');

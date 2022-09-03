@@ -33,8 +33,8 @@
 				<table>
 				<tbody>
 				<tr>
-					<td class="on" style="width:120px;"><a href="http://ds2.areumsoft.co.kr/Admin/Stats/OrderYearStats_L.asp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">年度订单统计</font></font></a></td>
-					<td class="" style="width:120px;"><a href="http://ds2.areumsoft.co.kr/Admin/Stats/OrderMonthStats_L.asp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">每月订单统计</font></font></a></td>
+					<td class="on" style="width:120px;"><a href="http://ds2.areumsoft.co/Admin/Stats/OrderYearStats_L.asp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">年度订单统计</font></font></a></td>
+					<td class="" style="width:120px;"><a href="http://ds2.areumsoft.co/Admin/Stats/OrderMonthStats_L.asp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">每月订单统计</font></font></a></td>
 				</tr>
 				</tbody>
 				</table>
@@ -111,29 +111,29 @@
 				<tbody><tr>
 					<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">应用类别</font></font></th>
 
-						<th><a href="http://ds2.areumsoft.co.kr/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=01&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一月</font></font></span></a></th>
+						<th><a href="http://ds2.areumsoft.co/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=01&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一月</font></font></span></a></th>
 
-						<th><a href="http://ds2.areumsoft.co.kr/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=02&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">二月</font></font></span></a></th>
+						<th><a href="http://ds2.areumsoft.co/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=02&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">二月</font></font></span></a></th>
 
-						<th><a href="http://ds2.areumsoft.co.kr/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=03&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">三月</font></font></span></a></th>
+						<th><a href="http://ds2.areumsoft.co/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=03&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">三月</font></font></span></a></th>
 
-						<th><a href="http://ds2.areumsoft.co.kr/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=04&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">四月</font></font></span></a></th>
+						<th><a href="http://ds2.areumsoft.co/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=04&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">四月</font></font></span></a></th>
 
-						<th><a href="http://ds2.areumsoft.co.kr/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=05&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">五月</font></font></span></a></th>
+						<th><a href="http://ds2.areumsoft.co/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=05&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">五月</font></font></span></a></th>
 
-						<th><a href="http://ds2.areumsoft.co.kr/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=06&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">六月</font></font></span></a></th>
+						<th><a href="http://ds2.areumsoft.co/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=06&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">六月</font></font></span></a></th>
 
-						<th><a href="http://ds2.areumsoft.co.kr/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=07&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">七月</font></font></span></a></th>
+						<th><a href="http://ds2.areumsoft.co/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=07&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">七月</font></font></span></a></th>
 
-						<th><a href="http://ds2.areumsoft.co.kr/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=08&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">八月</font></font></span></a></th>
+						<th><a href="http://ds2.areumsoft.co/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=08&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">八月</font></font></span></a></th>
 
-						<th><a href="http://ds2.areumsoft.co.kr/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=09&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">九月</font></font></span></a></th>
+						<th><a href="http://ds2.areumsoft.co/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=09&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">九月</font></font></span></a></th>
 
-						<th><a href="http://ds2.areumsoft.co.kr/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=10&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">十月</font></font></span></a></th>
+						<th><a href="http://ds2.areumsoft.co/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=10&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">十月</font></font></span></a></th>
 
-						<th><a href="http://ds2.areumsoft.co.kr/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=11&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">十一月</font></font></span></a></th>
+						<th><a href="http://ds2.areumsoft.co/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=11&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">十一月</font></font></span></a></th>
 
-						<th><a href="http://ds2.areumsoft.co.kr/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=12&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">十二月</font></font></span></a></th>
+						<th><a href="http://ds2.areumsoft.co/Admin/Stats/OrderMonthStats_L.asp?sYear=2022&amp;sMonth=12&amp;sSendCenterSeq=0" title="按月查看详细信息" target="_blank"><span style="color:#fff;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">十二月</font></font></span></a></th>
 
 				</tr>
 

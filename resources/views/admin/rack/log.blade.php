@@ -123,8 +123,8 @@
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">287</font></font></td>
 					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GR-A-001</font></font></span></td>
 					<td class="alCenter"><a href="/admin/main.html?sTrkNo=A123456789" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A123456789</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/StockPro_L.asp?sStateCd=&amp;sStockNo=" target="_blank"></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/NoData_L.asp?sNoDataSeq=0" target="_blank"></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/StockPro_L.asp?sStateCd=&amp;sStockNo=" target="_blank"></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/NoData_L.asp?sNoDataSeq=0" target="_blank"></a></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">登记</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">管理1</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2022-01-23 15:52</font></font></td>
@@ -134,8 +134,8 @@
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">286</font></font></td>
 					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">D-A-001</font></font></span></td>
 					<td class="alCenter"><a href="/admin/main.html?sTrkNo=ABC654S654" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ABC654S654</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/StockPro_L.asp?sStateCd=4&amp;sStockNo=S2100004" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">S210004</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/NoData_L.asp?sNoDataSeq=0" target="_blank"></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/StockPro_L.asp?sStateCd=4&amp;sStockNo=S2100004" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">S210004</font></font></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/NoData_L.asp?sNoDataSeq=0" target="_blank"></a></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">登记</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">管理1</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2021-10-28 18:39</font></font></td>
@@ -145,8 +145,8 @@
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">285</font></font></td>
 					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">D-C-107</font></font></span></td>
 					<td class="alCenter"><a href="/admin/main.html?sTrkNo=445654654654" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">445654654654</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/StockPro_L.asp?sStateCd=&amp;sStockNo=" target="_blank"></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/NoData_L.asp?sNoDataSeq=51" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">51</font></font></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/StockPro_L.asp?sStateCd=&amp;sStockNo=" target="_blank"></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/NoData_L.asp?sNoDataSeq=51" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">51</font></font></a></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">登记</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">管理1</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2021-10-28 18:03</font></font></td>
@@ -156,8 +156,8 @@
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">284</font></font></td>
 					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">D-C-108</font></font></span></td>
 					<td class="alCenter"><a href="/admin/main.html?sTrkNo=SP28SP28SP28" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SP28SP28SP28</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/StockPro_L.asp?sStateCd=&amp;sStockNo=0" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/NoData_L.asp?sNoDataSeq=38" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">38</font></font></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/StockPro_L.asp?sStateCd=&amp;sStockNo=0" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/NoData_L.asp?sNoDataSeq=38" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">38</font></font></a></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">重置</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">管理1</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2021-10-28 17:54</font></font></td>
@@ -167,8 +167,8 @@
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">282</font></font></td>
 					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">哈-A-001</font></font></span></td>
 					<td class="alCenter"><a href="/admin/main.html?sTrkNo=GG123123" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GG123123</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/StockPro_L.asp?sStateCd=&amp;sStockNo=" target="_blank"></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/NoData_L.asp?sNoDataSeq=48" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">48</font></font></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/StockPro_L.asp?sStateCd=&amp;sStockNo=" target="_blank"></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/NoData_L.asp?sNoDataSeq=48" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">48</font></font></a></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">登记</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">芒果4473</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2021-09-28 23:49</font></font></td>
@@ -178,8 +178,8 @@
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">281</font></font></td>
 					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">D-C-108</font></font></span></td>
 					<td class="alCenter"><a href="/admin/main.html?sTrkNo=SP28SP28SP28" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SP28SP28SP28</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/StockPro_L.asp?sStateCd=&amp;sStockNo=" target="_blank"></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/NoData_L.asp?sNoDataSeq=38" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">38</font></font></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/StockPro_L.asp?sStateCd=&amp;sStockNo=" target="_blank"></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/NoData_L.asp?sNoDataSeq=38" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">38</font></font></a></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">登记</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特金贸易</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-11-29 11:52</font></font></td>
@@ -189,8 +189,8 @@
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">280</font></font></td>
 					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">D-A-007</font></font></span></td>
 					<td class="alCenter"><a href="/admin/main.html?sTrkNo=1233" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1233</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/StockPro_L.asp?sStateCd=2&amp;sStockNo=S2000031" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">S2000031</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/NoData_L.asp?sNoDataSeq=0" target="_blank"></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/StockPro_L.asp?sStateCd=2&amp;sStockNo=S2000031" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">S2000031</font></font></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/NoData_L.asp?sNoDataSeq=0" target="_blank"></a></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">改变</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">朴成汉</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-13 23:05</font></font></td>
@@ -200,8 +200,8 @@
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">279</font></font></td>
 					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">D-A-001</font></font></span></td>
 					<td class="alCenter"><a href="/admin/main.html?sTrkNo=1233" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1233</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/StockPro_L.asp?sStateCd=2&amp;sStockNo=S2000031" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">S2000031</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/NoData_L.asp?sNoDataSeq=0" target="_blank"></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/StockPro_L.asp?sStateCd=2&amp;sStockNo=S2000031" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">S2000031</font></font></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/NoData_L.asp?sNoDataSeq=0" target="_blank"></a></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">改变</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">朴成汉</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-13 23:05</font></font></td>
@@ -211,8 +211,8 @@
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">278</font></font></td>
 					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">D-A-007</font></font></span></td>
 					<td class="alCenter"><a href="/admin/main.html?sTrkNo=1233" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1233</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/StockPro_L.asp?sStateCd=2&amp;sStockNo=S2000031" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">S2000031</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/NoData_L.asp?sNoDataSeq=0" target="_blank"></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/StockPro_L.asp?sStateCd=2&amp;sStockNo=S2000031" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">S2000031</font></font></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/NoData_L.asp?sNoDataSeq=0" target="_blank"></a></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">改变</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">朴成汉</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-13 23:02</font></font></td>
@@ -222,8 +222,8 @@
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">277</font></font></td>
 					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">D-A-001</font></font></span></td>
 					<td class="alCenter"><a href="/admin/main.html?sTrkNo=1233" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1233</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/StockPro_L.asp?sStateCd=2&amp;sStockNo=S2000031" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">S2000031</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/NoData_L.asp?sNoDataSeq=0" target="_blank"></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/StockPro_L.asp?sStateCd=2&amp;sStockNo=S2000031" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">S2000031</font></font></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/NoData_L.asp?sNoDataSeq=0" target="_blank"></a></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">登记</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">朴成汉</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-13 22:59</font></font></td>
@@ -233,8 +233,8 @@
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">276</font></font></td>
 					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">D-A-003</font></font></span></td>
 					<td class="alCenter"><a href="/admin/main.html?sTrkNo=N47477112665" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">N47477112665</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/StockPro_L.asp?sStateCd=3&amp;sStockNo=S1910010" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">S1910010</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/NoData_L.asp?sNoDataSeq=0" target="_blank"></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/StockPro_L.asp?sStateCd=3&amp;sStockNo=S1910010" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">S1910010</font></font></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/NoData_L.asp?sNoDataSeq=0" target="_blank"></a></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">改变</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">小白</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-13 14:41</font></font></td>
@@ -244,8 +244,8 @@
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">275</font></font></td>
 					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">D-A-001</font></font></span></td>
 					<td class="alCenter"><a href="/admin/main.html?sTrkNo=N47477112665" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">N47477112665</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/StockPro_L.asp?sStateCd=3&amp;sStockNo=S1910010" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">S1910010</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/NoData_L.asp?sNoDataSeq=0" target="_blank"></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/StockPro_L.asp?sStateCd=3&amp;sStockNo=S1910010" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">S1910010</font></font></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/NoData_L.asp?sNoDataSeq=0" target="_blank"></a></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">改变</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">小白</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-13 14:41</font></font></td>
@@ -255,8 +255,8 @@
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">274</font></font></td>
 					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">D-A-003</font></font></span></td>
 					<td class="alCenter"><a href="/admin/main.html?sTrkNo=N47477112665" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">N47477112665</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/StockPro_L.asp?sStateCd=3&amp;sStockNo=S1910010" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">S1910010</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/NoData_L.asp?sNoDataSeq=0" target="_blank"></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/StockPro_L.asp?sStateCd=3&amp;sStockNo=S1910010" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">S1910010</font></font></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/NoData_L.asp?sNoDataSeq=0" target="_blank"></a></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">改变</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">小白</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-13 14:41</font></font></td>
@@ -266,8 +266,8 @@
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">273</font></font></td>
 					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">D-C-107</font></font></span></td>
 					<td class="alCenter"><a href="/admin/main.html?sTrkNo=UKUK" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">UKUK</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/StockPro_L.asp?sStateCd=&amp;sStockNo=" target="_blank"></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/NoData_L.asp?sNoDataSeq=36" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">36</font></font></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/StockPro_L.asp?sStateCd=&amp;sStockNo=" target="_blank"></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/NoData_L.asp?sNoDataSeq=36" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">36</font></font></a></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">改变</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">崔仁哲</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-09 14:46</font></font></td>
@@ -277,8 +277,8 @@
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">272</font></font></td>
 					<td class="alCenter"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">D-C-108</font></font></span></td>
 					<td class="alCenter"><a href="/admin/main.html?sTrkNo=UKUK" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">UKUK</font></font></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/StockPro_L.asp?sStateCd=&amp;sStockNo=" target="_blank"></a></td>
-					<td class="alCenter"><a href="http://ds2.areumsoft.co.kr/Admin/Acting/NoData_L.asp?sNoDataSeq=36" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">36</font></font></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/StockPro_L.asp?sStateCd=&amp;sStockNo=" target="_blank"></a></td>
+					<td class="alCenter"><a href="http://ds2.areumsoft.co/Admin/Acting/NoData_L.asp?sNoDataSeq=36" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">36</font></font></a></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">改变</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">崔仁哲</font></font></td>
 					<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2020-10-09 14:46</font></font></td>

@@ -176,7 +176,7 @@
 					<tr>
 						<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1265</font></font></td>
 						<td class="alCenter">
-							<a href="http://ds2.areumsoft.co.kr/Admin/Acting/Order_V.asp?sOrderNo=22500043" target="_blank"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">22500043</font></font></span></a>
+							<a href="http://ds2.areumsoft.co/Admin/Acting/Order_V.asp?sOrderNo=22500043" target="_blank"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">22500043</font></font></span></a>
 						</td>
 						<td class="alCenter">
 							<a href="javascript:" memcode="41" popurl="/Admin/Member/MemPopMenu_S.asp" class="tipMem" data-hasqtip="2">
@@ -362,7 +362,7 @@
 					<tr>
 						<td class="alCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1242</font></font></td>
 						<td class="alCenter">
-							<a href="http://ds2.areumsoft.co.kr/Admin/Acting/Order_V.asp?sOrderNo=22400006" target="_blank"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">22400006</font></font></span></a>
+							<a href="http://ds2.areumsoft.co/Admin/Acting/Order_V.asp?sOrderNo=22400006" target="_blank"><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">22400006</font></font></span></a>
 						</td>
 						<td class="alCenter">
 							<a href="javascript:" memcode="41" popurl="/Admin/Member/MemPopMenu_S.asp" class="tipMem" data-hasqtip="9">
