@@ -37,13 +37,13 @@
 				<table>
 				<tbody>
 				<tr>
-					<td class="on" style="width:120px;"><a href="http://ds2.areumsoft.co.kr/Admin/Bbs/Bbs_L.asp?sBbCode=2&amp;sStateNm="><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全部的</font></font></a></td>
+					<td class="on" style="width:120px;"><a href="http://ds2.areumsoft.co/Admin/Bbs/Bbs_L.asp?sBbCode=2&amp;sStateNm="><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全部的</font></font></a></td>
 
-						<td class="" style="width:120px;"><a href="http://ds2.areumsoft.co.kr/Admin/Bbs/Bbs_L.asp?sBbCode=2&amp;sStateNm=%EB%AC%B8%EC%9D%98%EC%A4%91"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">询问</font></font></a></td>
+						<td class="" style="width:120px;"><a href="http://ds2.areumsoft.co/Admin/Bbs/Bbs_L.asp?sBbCode=2&amp;sStateNm=%EB%AC%B8%EC%9D%98%EC%A4%91"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">询问</font></font></a></td>
 
-						<td class="" style="width:120px;"><a href="http://ds2.areumsoft.co.kr/Admin/Bbs/Bbs_L.asp?sBbCode=2&amp;sStateNm=%ED%99%95%EC%9D%B8%EC%A4%91"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">检查</font></font></a></td>
+						<td class="" style="width:120px;"><a href="http://ds2.areumsoft.co/Admin/Bbs/Bbs_L.asp?sBbCode=2&amp;sStateNm=%ED%99%95%EC%9D%B8%EC%A4%91"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">检查</font></font></a></td>
 
-						<td class="" style="width:120px;"><a href="http://ds2.areumsoft.co.kr/Admin/Bbs/Bbs_L.asp?sBbCode=2&amp;sStateNm=%EB%8B%B5%EB%B3%80%EC%99%84%EB%A3%8C"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">回答完毕</font></font></a></td>
+						<td class="" style="width:120px;"><a href="http://ds2.areumsoft.co/Admin/Bbs/Bbs_L.asp?sBbCode=2&amp;sStateNm=%EB%8B%B5%EB%B3%80%EC%99%84%EB%A3%8C"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">回答完毕</font></font></a></td>
 
 				</tr>
 				</tbody>

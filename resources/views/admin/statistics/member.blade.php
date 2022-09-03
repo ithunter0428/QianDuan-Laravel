@@ -33,8 +33,8 @@
 				<table>
 				<tbody>
 				<tr>
-					<td class="on" style="width:120px;"><a href="http://ds2.areumsoft.co.kr/Admin/Stats/MemYearStats_L.asp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会员年统计</font></font></a></td>
-					<td class="" style="width:120px;"><a href="http://ds2.areumsoft.co.kr/Admin/Stats/MemMonthStats_L.asp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">每月按会员统计</font></font></a></td>
+					<td class="on" style="width:120px;"><a href="http://ds2.areumsoft.co/Admin/Stats/MemYearStats_L.asp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">会员年统计</font></font></a></td>
+					<td class="" style="width:120px;"><a href="http://ds2.areumsoft.co/Admin/Stats/MemMonthStats_L.asp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">每月按会员统计</font></font></a></td>
 				</tr>
 				</tbody>
 				</table>

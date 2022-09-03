@@ -1,4 +1,4 @@
-<!-- saved from url=(0068)http://ds2.areumsoft.co.kr/Admin/Sms/Sms_W.asp?gMnu1=107&gMnu2=10703 -->
+<!-- saved from url=(0068)http://ds2.areumsoft.co/Admin/Sms/Sms_W.asp?gMnu1=107&gMnu2=10703 -->
 <html class="no-js translated-ltr" lang="zh-CN">
 <!--<![endif]--><!--[if IE 6]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie6" lang="ko-KR"> <![endif]--><!--[if IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie7" lang="ko-KR"> <![endif]--><!--[if IE 8]> <html class="no-js lt-ie10 lt-ie9 ie8" lang="ko-KR"> <![endif]--><!--[if IE 9]> <html class="no-js lt-ie10 ie9" lang="ko-KR"> <![endif]-->
 <head>

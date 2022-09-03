@@ -38,7 +38,7 @@
 				<tbody>
 				<tr>
 
-						<td class="on" style="width:120px;"><a href="http://ds2.areumsoft.co.kr/Admin/Homepage/MainRolling_L.asp?sBannerDvsCd=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主要 - 滚动横幅</font></font></a></td>
+						<td class="on" style="width:120px;"><a href="http://ds2.areumsoft.co/Admin/Homepage/MainRolling_L.asp?sBannerDvsCd=1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主要 - 滚动横幅</font></font></a></td>
 
 				</tr>
 				</tbody>

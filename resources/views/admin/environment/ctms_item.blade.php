@@ -32,8 +32,8 @@
 				<table>
 				<tbody>
 				<tr>
-					<td class="on" style="width:120px;"><a href="http://ds2.areumsoft.co.kr/Admin/Setup/CtmsItem_L.asp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">海关物品</font></font></a></td>
-					<td class="" style="width:120px;"><a href="http://ds2.areumsoft.co.kr/Admin/Setup/CtmsItemCate_L.asp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">海关物品类别</font></font></a></td>
+					<td class="on" style="width:120px;"><a href="http://ds2.areumsoft.co/Admin/Setup/CtmsItem_L.asp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">海关物品</font></font></a></td>
+					<td class="" style="width:120px;"><a href="http://ds2.areumsoft.co/Admin/Setup/CtmsItemCate_L.asp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">海关物品类别</font></font></a></td>
 				</tr>
 				</tbody>
 				</table>

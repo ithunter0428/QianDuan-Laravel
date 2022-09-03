@@ -34,8 +34,8 @@
 				<table>
 				<tbody>
 				<tr>
-					<td class="on" style="width:120px;"><a href="http://ds2.areumsoft.co.kr/Admin/Homepage/ShopSite_L.asp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">购物信息管理</font></font></a></td>
-					<td class="" style="width:120px;"><a href="http://ds2.areumsoft.co.kr/Admin/Homepage/ShopSiteCate_L.asp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分类管理</font></font></a></td>
+					<td class="on" style="width:120px;"><a href="http://ds2.areumsoft.co/Admin/Homepage/ShopSite_L.asp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">购物信息管理</font></font></a></td>
+					<td class="" style="width:120px;"><a href="http://ds2.areumsoft.co/Admin/Homepage/ShopSiteCate_L.asp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分类管理</font></font></a></td>
 				</tr>
 				</tbody>
 				</table>
