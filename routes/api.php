@@ -59,6 +59,11 @@ Route::group(['middleware' => 'auth:api'], function () {
     Route::delete('users/{user}', 'UserController@destroy');
 });
 
+// Stockpro routes
+Route::group(['prefix' => 'stock'], function(){
+    Route::post('new_request', 'StockProController@create');
+});
+
 
 //Hotel routes
 Route::get('hotels', 'HotelController@index');

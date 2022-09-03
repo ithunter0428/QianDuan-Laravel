@@ -53,23 +53,23 @@ function fnNext() {
 	var oField = null;
 	var FailCnt = 0;
 
-	// 서비스 신청 유의사항
+	// Service application notes
 	oField = $("input[name='ServerAgree']");
 	if ( fnCkBoxVal(oField) == '' ) {
-		alert('서비스 신청 유의사항 약관에 동의하셔야 합니다.'); $("input[name='SEND_CENTER_SEQ']").focus(); FailCnt = 1;
+		alert('Agree to the service precaution and content.'); $("input[name='SEND_CENTER_SEQ']").focus(); FailCnt = 1;
 		return;
 	}
 
-	// 센터
+	// Center
 	oField = $("input[name='SEND_CENTER_SEQ']");
 	if ( fnCkBoxVal(oField) == '' ) {
-		alert('배송센터를 선택하십시오.');oField.focus(); FailCnt = 1;
+		alert('Select delivery center.');oField.focus(); FailCnt = 1;
 		return;
 	}
-	// 운송방식
+	// Delivery method
 	oField = $("input[name='DLVR_WAY_CD']");
 	if ( fnCkBoxVal(oField) == '' ) {
-		alert('운송방식을 선택하십시오.');oField.focus(); FailCnt = 1;
+		alert('Select delivery method.');oField.focus(); FailCnt = 1;
 		return;
 	}
 

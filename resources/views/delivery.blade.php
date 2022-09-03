@@ -6,6 +6,11 @@
 	<link rel="stylesheet" href="{{ asset('/delivery_files/blue.css') }}">
 @endsection
 
+@section('scripts')
+<script type="text/javascript" src="{{ asset('/delivery_files/Delivery_W.js') }}"></script>
+<script type="text/javascript" src="{{ asset('/delivery_files/Common.js') }}"></script>
+@endsection
+
 @section('content')
 	<!-- Row -->
     <div class="row">
@@ -114,7 +119,7 @@
 	<div class="row">
 
 		<div class="col-xl-12 tc ">
-			<a href="Delivery_W1.htm" class="button ripple-effect dark big">下一步</a>
+			<a id="next_buton" onclick="fnNext()" class="button ripple-effect dark big">下一步</a>
 		</div>
 	</div>
     <!-- Row  / End -->
