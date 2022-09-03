@@ -47,6 +47,6 @@ class StockProController extends Controller
             $data['success'] =  false;
             $data['errors'] =  collect(['Error']);
         }
-        // return redirect('/');
+        return redirect('/');
     }
 }

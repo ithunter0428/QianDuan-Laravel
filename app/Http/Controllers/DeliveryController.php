@@ -20,4 +20,9 @@ class DeliveryController extends Controller
     {
         return view('delivery');
     }
+
+    public function view_freight_forwarding ()
+    {
+        return view('freight_forwarding');
+    }
 }

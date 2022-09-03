@@ -119,7 +119,7 @@
 	<div class="row">
 
 		<div class="col-xl-12 tc ">
-			<a id="next_buton" onclick="fnNext()" class="button ripple-effect dark big">下一步</a>
+			<a id="next_buton" href="/freight_forwarding" class="button ripple-effect dark big">下一步</a>
 		</div>
 	</div>
     <!-- Row  / End -->

@@ -23,6 +23,7 @@ Route::get('/logout', 'HomeController@logout')->name('logout');
 Route::post('/register', 'HomeController@register')->name('register');
 
 Route::get('/delivery', 'DeliveryController@index')->name('delivery');
+Route::get('/freight_forwarding', 'DeliveryController@view_freight_forwarding')->name('freight_forwarding');
 Route::get('/stockpro', 'StockProController@index')->name('stockpro');
 
 // admin
