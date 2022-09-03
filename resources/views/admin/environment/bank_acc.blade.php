@@ -27,7 +27,7 @@
 		<div class="box-container corners02"><!-- Begin 검색 폼 -->
 
 
-			<span class="whGraBtn ty2"><button type="button" class="txt" onclick="fnPopWinCT(&#39;./BankAcc_W.asp?sKind=A&amp;sAccSeq=&#39;, &#39;BankAcc_W&#39;, 1000, 220);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">存款账户注册</font></font></button></span>
+			<span class="whGraBtn ty2"><button type="button" class="txt" onclick="fnEdit();"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">存款账户注册</font></font></button></span>
 
 			<p class="clrBoth pHt10"></p>
 
@@ -58,33 +58,21 @@
 
 				</tr>
 
+				@foreach ($data as $row)
 				<tr>
-					<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></td>
-					<td><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">国民银行</font></font></span></td>
-					<td><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">98478430758</font></font></span></td>
-					<td><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阿鲁姆解决方案有限公司</font></font></span></td>
-					<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font></td>
+					<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $row->round }}</font></font></td>
+					<td><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $row->bank_name }}</font></font></span></td>
+					<td><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $row->account_number }}</font></font></span></td>
+					<td><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $row->account_owner }}</font></font></span></td>
+					<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $row->status? '使用': '' }}</font></font></td>
 					<td class="listBtn">
-						<span class="whGraBtn ty2"><button type="button" class="txt" onclick="fnPopWinCT(&#39;./BankAcc_W.asp?sKind=M&amp;sAccSeq=5&#39;, &#39;BankAcc_W&#39;, 1000, 220);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">修改</font></font></button></span>
+						<span class="whGraBtn ty2"><button type="button" class="txt" onclick="fnEdit(`{{ json_encode(array($row)) }}`)"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">修改</font></font></button></span>
 						<span class="whRedBtn ty2">
-							<button type="button" class="txt" onclick="fnDel_M(&#39;5&#39;);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button>
+							<button type="button" class="txt" onclick="fnDel({{ $row->id }});"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button>
 						</span>
 					</td>
 				</tr>
-
-				<tr>
-					<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></td>
-					<td><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">新韩银行</font></font></span></td>
-					<td><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">123-456-78910</font></font></span></td>
-					<td><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阿鲁姆解决方案有限公司</font></font></span></td>
-					<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用</font></font></td>
-					<td class="listBtn">
-						<span class="whGraBtn ty2"><button type="button" class="txt" onclick="fnPopWinCT(&#39;./BankAcc_W.asp?sKind=M&amp;sAccSeq=2&#39;, &#39;BankAcc_W&#39;, 1000, 220);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">修改</font></font></button></span>
-						<span class="whRedBtn ty2">
-							<button type="button" class="txt" onclick="fnDel_M(&#39;2&#39;);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button>
-						</span>
-					</td>
-				</tr>
+				@endforeach
 
 				</tbody></table>
 
@@ -104,4 +92,76 @@
 			<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font><a href="#" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> </font></font></a></h3>
 		</div>
 	</div>
+
+
+<div id="edit_modal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+			<div class="modal-header" id='edit_modal_header'>
+				存款账户
+			</div>
+            <div class="modal-body">
+                <form method="post" name="frmSmsCont" id="frmSmsCont">
+					<table class="order_write order_table_top">
+                        <colgroup>
+                            <col width="20%">
+                            <col width="80%">
+                        </colgroup>
+
+                        <tbody>
+						<tr>
+                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">转动</font></font></th>
+                            <td colspan="3">
+                                <input type="text" class="iptBox1 w30" id="modal_round" maxlength="80" value="">
+                            </td>
+                        </tr>
+
+						<tr>
+                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">银行名称</font></font></th>
+                            <td colspan="3">
+                                <input type="text" class="iptBox1 w30" id="modal_bank_name" maxlength="80" value="">
+                            </td>
+                        </tr>
+
+						<tr>
+                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">帐号</font></font></th>
+                            <td colspan="3">
+                                <input type="text" class="iptBox1 w30" id="modal_account_number" maxlength="80" value="">
+                            </td>
+                        </tr>
+
+						<tr>
+                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">账户持有人</font></font></th>
+                            <td colspan="3">
+                                <input type="text" class="iptBox1 w30" id="modal_account_owner" maxlength="80" value="">
+                            </td>
+                        </tr>
+
+                        <tr>
+							<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是否使用</font></font></th>
+                            <td>
+								<select id="modal_status">
+									<option value="1" selected="">使用</option>
+									<option value="0">未使用</option>
+								</select>
+                            </td>
+                        </tr>
+
+                    </tbody></table>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <div class="btn-area alCenter">
+                    <span class="whGraBtn_bg ty2">
+                        <button type="button" class="txt" onclick="fnSave()"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Save</font></font></button>
+                    </span>
+                    <span class="whGraBtn ty2">
+                        <button type="button" class="txt" onclick="fnEditModalClose()" data-dismiss="modal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Close</font></font></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

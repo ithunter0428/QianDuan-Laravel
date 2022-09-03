@@ -37,7 +37,7 @@
 				<tbody>
 				<tr>
 
-					<td class="on" style="width:120px;"><a href="http://ds2.areumsoft.co.kr/Admin/Setup/ExgRt_L.asp?sNationSeq=3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中国</font></font></a></td>
+					<td class="on" style="width:120px;"><a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中国</font></font></a></td>
 
 				</tr>
 				</tbody>
@@ -49,7 +49,7 @@
 
 
 
-			<span class="whGraBtn ty2"><button type="button" class="txt" onclick="fnPopWinCT(&#39;./ExgRt_W.asp?sNationSeq=3&#39;, &#39;ExgRt_W&#39;, 800, 250);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">汇率确认</font></font></button></span>
+			<span class="whGraBtn ty2"><button type="button" class="txt" onclick="fnEdit();"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">汇率确认</font></font></button></span>
 
 
 			<p class="clrBoth pHt30"></p>
@@ -85,7 +85,21 @@
 					<th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-</font></font></th>
 				</tr>
 
+				@foreach ($data as $row)
 				<tr>
+					<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $row->round }}</font></font></td>
+					<td><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $row->country }}</font></font></span></td>
+					<td><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $row->period }}</font></font></span></td>
+					<td><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{ $row->exchange_rate }}</font></font></span></td>
+					<td class="listBtn">
+						<span class="whRedBtn ty2">
+							<button type="button" class="txt" onclick="fnDel({{ $row->id }});"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button>
+						</span>
+					</td>
+				</tr>
+				@endforeach
+
+				<!-- <tr>
 					<td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一</font></font></td>
 					<td><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中国</font></font></span></td>
 					<td><span class="bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通知信息</font></font></span></td>
@@ -95,18 +109,18 @@
 							<button type="button" class="txt" onclick="fnDel_M(&#39;1012&#39;);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button>
 						</span>
 					</td>
-				</tr>
+				</tr> -->
 
 				</tbody></table>
 			</div>
 
-			<div class="pagDv">
+			<!-- <div class="pagDv">
 				<div class="paging">	 <span class="num"><a href="javascript:" class="ArrowOff" title="没有前 10 页"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&lt;</font></font></a><a href="javascript:" class="on" onclick="fnSearch(&#39;frmSearch&#39;, 1);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一</font></font></a> <a href="javascript:" class="ArrowOff" title="没有下 10 页"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&gt;</font></font></a>	</span></div>
 				<div class="CntRt">
 					<span class="go"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页 /
 					 </font></font><span class="tt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></span>
 				</div>
-			</div>
+			</div> -->
 
 		</form>
 		</div>
@@ -121,4 +135,65 @@
 			<h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font><a href="#" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> </font></font></a></h3>
 		</div>
 	</div>
+
+
+<div id="edit_modal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+			<div class="modal-header" id='edit_modal_header'>
+			</div>
+            <div class="modal-body">
+                <form method="post" name="frmSmsCont" id="frmSmsCont">
+					<table class="order_write order_table_top">
+                        <colgroup>
+                            <col width="20%">
+                            <col width="80%">
+                        </colgroup>
+
+                        <tbody>
+						<tr>
+                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">国家</font></font></th>
+                            <td colspan="3">
+                                <input type="text" class="iptBox1 w30" id="modal_country" maxlength="80" value="">
+                            </td>
+                        </tr>
+
+						<tr>
+                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">转动</font></font></th>
+                            <td colspan="3">
+                                <input type="text" class="iptBox1 w30" id="modal_round" maxlength="80" value="">
+                            </td>
+                        </tr>
+
+						<tr>
+                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">期间</font></font></th>
+                            <td colspan="3">
+                                <input type="text" class="iptBox1 w30" id="modal_period" maxlength="80" value="">
+                            </td>
+                        </tr>
+
+						<tr>
+                            <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">汇率</font></font></th>
+                            <td colspan="3">
+                                <input type="text" class="iptBox1 w30" id="modal_exchange_rate" maxlength="80" value="">
+                            </td>
+                        </tr>
+
+                    </tbody></table>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <div class="btn-area alCenter">
+                    <span class="whGraBtn_bg ty2">
+                        <button type="button" class="txt" onclick="fnSave()"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Save</font></font></button>
+                    </span>
+                    <span class="whGraBtn ty2">
+                        <button type="button" class="txt" onclick="fnEditModalClose()" data-dismiss="modal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Close</font></font></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

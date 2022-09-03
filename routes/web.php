@@ -226,26 +226,40 @@ Route::group(['middleware' => ['verify_role:admin'], 'as' => 'admin.', 'prefix' 
         // Center
         Route::group(['as' => 'center.', 'prefix' => 'center'], function () {
             Route::get('/', 'Admin\Environment\CenterController@index')->name('home');
+            Route::get('/list', 'Admin\Environment\CenterController@list');
+            Route::post('/', 'Admin\Environment\CenterController@create');
+            Route::put('/{row}', 'Admin\Environment\CenterController@update');
+            Route::delete('/{id}', 'Admin\Environment\CenterController@destroy');
         });
 
         // DlvFree
         Route::group(['as' => 'dlv_free.', 'prefix' => 'dlv_free'], function () {
             Route::get('/', 'Admin\Environment\DlvFreeController@index')->name('home');
+            Route::get('/{city}/{method}', 'Admin\Environment\DlvFreeController@index');
+            Route::post('/', 'Admin\Environment\DlvFreeController@create');
+            Route::delete('/{city}/{method}', 'Admin\Environment\DlvFreeController@destroy');
         });
 
         // BankAcc
         Route::group(['as' => 'bank_acc.', 'prefix' => 'bank_acc'], function () {
             Route::get('/', 'Admin\Environment\BankAccController@index')->name('home');
+            Route::post('/', 'Admin\Environment\BankAccController@create');
+            Route::put('/{row}', 'Admin\Environment\BankAccController@update');
+            Route::delete('/{id}', 'Admin\Environment\BankAccController@destroy');
         });
 
         // ExgRt
         Route::group(['as' => 'exg_rt.', 'prefix' => 'exg_rt'], function () {
             Route::get('/', 'Admin\Environment\ExgRtController@index')->name('home');
+            Route::post('/', 'Admin\Environment\ExgRtController@create');
+            Route::delete('/{id}', 'Admin\Environment\ExgRtController@destroy');
         });
 
         // AppExgRt
         Route::group(['as' => 'app_exg_rt.', 'prefix' => 'app_exg_rt'], function () {
             Route::get('/', 'Admin\Environment\AppExgRtController@index')->name('home');
+            Route::post('/', 'Admin\Environment\AppExgRtController@create');
+            Route::delete('/{id}', 'Admin\Environment\AppExgRtController@destroy');
         });
 
         // AddSvc
@@ -266,6 +280,9 @@ Route::group(['middleware' => ['verify_role:admin'], 'as' => 'admin.', 'prefix' 
         // IvcBandWh
         Route::group(['as' => 'ivc_band_wh.', 'prefix' => 'ivc_band_wh'], function () {
             Route::get('/', 'Admin\Environment\IvcBandWhController@index')->name('home');
+            Route::post('/', 'Admin\Environment\IvcBandWhController@create');
+            Route::put('/{row}', 'Admin\Environment\IvcBandWhController@update');
+            Route::delete('/{id}', 'Admin\Environment\IvcBandWhController@destroy');
         });
     });
 
