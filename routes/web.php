@@ -69,15 +69,22 @@ Route::group(['middleware' => ['verify_role:admin'], 'as' => 'admin.', 'prefix' 
             Route::get('/', 'Admin\Member\OutListController@index')->name('home');
         });
 
-        // Deposit Application Details
-        Route::group(['as' => 'deposit_req.', 'prefix' => 'deposit_req'], function () {
-            Route::get('/', 'Admin\Member\DepositReqController@index')->name('home');
+        // Deposit Application/Usage/Without Check
+        Route::group(['as' => 'deposit_application.', 'prefix' => 'deposit_application'], function () {
+            Route::get('/list', 'Admin\Member\DepositApplicationController@index')->name('home');
+            Route::get('/usage', 'Admin\Member\DepositApplicationController@view_usage')->name('usage');
+            Route::get('/without_passbook', 'Admin\Member\DepositApplicationController@view_without_passbook')->name('without_passbook');
         });
 
-        Route::get('/deposit_use', 'Admin\MemberController@deposit_use')->name('view_deposit_use');
-        Route::get('/deposit_without_passbook', 'Admin\MemberController@deposit_without_passbook')->name('view_deposit_without_passbook');
-        Route::get('/notification_message', 'Admin\MemberController@notification_message')->name('view_notification_message');
-        Route::get('/reg', 'Admin\MemberController@reg')->name('view_reg');
+        // Notification
+        Route::group(['as' => 'notification.', 'prefix' => 'notification'], function () {
+            Route::get('/', 'Admin\Member\NotificationController@index')->name('home');
+        });
+
+        // Register
+        Route::group(['as' => 'reg.', 'prefix' => 'reg'], function () {
+            Route::get('/', 'Admin\Member\RegisterController@index')->name('home');
+        });
     });
 
     // Announcement
