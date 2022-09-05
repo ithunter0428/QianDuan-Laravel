@@ -67,8 +67,8 @@
                                 <td>
                                     <select name="sReqDvsCode">
                                         <option value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">= 选择</font></font></option>
-                                        <option value="Application" {{ $filter_application_category == 'Application' ? 'selected' : '' }}><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">申请</font></font></option>
-                                        <option value="Refund" {{ $filter_application_category == 'Refund' ? 'selected' : '' }}><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">退款</font></font></option>
+                                        <option value="Application" {{ $filter_category == 'Application' ? 'selected' : '' }}><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">申请</font></font></option>
+                                        <option value="Refund" {{ $filter_category == 'Refund' ? 'selected' : '' }}><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">退款</font></font></option>
                                     </select>
                                 </td>
                                 <td>
