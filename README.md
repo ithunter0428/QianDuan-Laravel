@@ -6,7 +6,7 @@
 3. Run the following command
     ```
         php artisan migrate
-        php artisan seed
+        php artisan db:seed
         php artisan key:generate
         php artisan serve
     ```
