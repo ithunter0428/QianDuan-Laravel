@@ -25,6 +25,8 @@ Route::post('/register', 'HomeController@register')->name('register');
 Route::get('/delivery', 'DeliveryController@index')->name('delivery');
 Route::get('/freight_forwarding', 'DeliveryController@view_freight_forwarding')->name('freight_forwarding');
 Route::get('/stockpro', 'StockProController@index')->name('stockpro');
+Route::get('/buy', 'BuyController@index')->name('buy');
+Route::get('/buy/add', 'BuyController@add')->name('buy_add');
 
 // admin
 Route::group(['middleware' => ['verify_role:admin'], 'as' => 'admin.', 'prefix' => 'admin'], function () {

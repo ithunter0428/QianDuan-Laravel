@@ -145,7 +145,7 @@
                                 </li>
                                 <li class="menu-item has-children"><a href="#">代购申请</a>
                                     <ul class="sub-menu">
-                                        <li><a href="buy_W.htm">代购申请</a></li>
+                                        <li><a href="{{ route('buy') }}">代购申请</a></li>
                                         <li><a href="#">管理发布商品</a></li>
                                     </ul>
                                 </li>
