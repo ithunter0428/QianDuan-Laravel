@@ -27,6 +27,9 @@ Route::get('/freight_forwarding', 'DeliveryController@view_freight_forwarding')-
 Route::get('/stockpro', 'StockProController@index')->name('stockpro');
 Route::get('/buy', 'BuyController@index')->name('buy');
 Route::get('/buy/add', 'BuyController@add')->name('buy_add');
+Route::get('/mypage', 'MyPageController@index')->name('mypage');
+Route::get('/deposit/use_', 'DepositController@use')->name('deposit_use');
+Route::get('/deposit/req', 'DepositController@req')->name('deposit_req');
 
 // admin
 Route::group(['middleware' => ['verify_role:admin'], 'as' => 'admin.', 'prefix' => 'admin'], function () {

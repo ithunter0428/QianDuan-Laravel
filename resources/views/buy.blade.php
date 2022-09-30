@@ -1,11 +1,5 @@
 @extends('layouts.master')
 
-@section('stylesheets')
-	<link rel="stylesheet" href="{{ asset('/delivery_files/UserStyle.css') }}">
-	<link rel="stylesheet" href="{{ asset('/delivery_files/DevStyle.css') }}">
-	<link rel="stylesheet" href="{{ asset('/delivery_files/blue.css') }}">
-@endsection
-
 @section('scripts')
 <script type="text/javascript" src="{{ asset('/delivery_files/Delivery_W.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/delivery_files/Common.js') }}"></script>
@@ -79,7 +73,7 @@
         </div>
 
         <div class="col-md-6 margin-bottom-20">
-            <div class="dashboard-box  margin-top-0 ">
+            <div class="dashboard-box  margin-top-0">
                 <!-- Headline -->
                 <div class="headline">
                     <h3><i class="icon-feather-chevrons-right"></i>选择货运方式</h3>

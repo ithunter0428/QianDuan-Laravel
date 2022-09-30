@@ -12,11 +12,14 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!--====== Default css ======-->
+    <link rel="stylesheet" href="{{ asset('/static/css/blue.css') }}">
     <link rel="stylesheet" href="{{ asset('/static/css/default.css') }}">
     <!--====== Style css ======-->
     <link rel="stylesheet" href="{{ asset('/static/css/style.css') }}">
     <!--====== Responsive css ======-->
     <link rel="stylesheet" href="{{ asset('/static/css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('/static/css/UserStyle.css') }}">
+    <link rel="stylesheet" href="{{ asset('/static/css/DevStyle.css') }}">
     @yield('stylesheets')
 
     <style>
@@ -159,9 +162,9 @@
                                 </li>
                                 <li class="menu-item has-children"><a href="#">会员主页</a>
                                     <ul class="sub-menu">
-                                        <li><a href="mypage.html">我的主页</a></li>
-                                        <li><a href="#">支付管理</a></li>
-                                        <li><a href="#">充值管理</a></li>
+                                        <li><a href="{{ route('mypage') }}">我的主页</a></li>
+                                        <li><a href="{{ route('deposit_use') }}">支付管理</a></li>
+                                        <li><a href="{{ route('deposit_req') }}">充值管理</a></li>
                                         <li><a href="#">积分管理</a></li>
                                         <li><a href="#">优惠券</a></li>
                                         <li><a href="#">1:1咨询</a></li>
